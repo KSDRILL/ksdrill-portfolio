@@ -1,0 +1,76 @@
+import Card from "@/components/ui/Card";
+import Section from "@/components/ui/Section";
+import SectionHeader from "@/components/ui/SectionHeader";
+import { loadThemeConfig } from "@/lib/config-loader";
+import { fetchProfile } from "@/lib/api/portfolio";
+import { User } from "lucide-react";
+import ProfilePortrait from "@/components/ui/ProfilePortrait";
+
+export default async function WhoIAmSection() {
+  const profile = await fetchProfile();
+  const { sections } = loadThemeConfig();
+  const copy = sections.profile;
+
+  return (
+    <Section id="profile" className="space-y-8">
+      <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <SectionHeader
+          kicker={copy.kicker}
+          title={copy.title}
+          description={copy.description}
+          className="max-w-2xl"
+        />
+        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-slate-700/90 bg-slate-900/60 text-blue-400 md:h-16 md:w-16">
+          <User className="h-7 w-7 md:h-8 md:w-8" aria-hidden />
+        </div>
+      </div>
+      <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:gap-10">
+        {profile.portraitSrc ? (
+          <div className="flex flex-col gap-6 md:flex-row md:items-stretch lg:flex-col xl:flex-row xl:items-stretch">
+            <ProfilePortrait
+              src={profile.portraitSrc}
+              alt={profile.portraitAlt ?? profile.name}
+              className="max-w-[260px] md:max-w-[220px] xl:max-w-[240px]"
+            />
+            <Card className="min-w-0 flex-1 border-slate-800/80">
+              <p className="text-sm leading-relaxed text-slate-300 md:text-base">
+                {profile.summary}
+              </p>
+            </Card>
+          </div>
+        ) : (
+          <Card className="border-slate-800/80">
+            <p className="text-sm leading-relaxed text-slate-300 md:text-base">
+              {profile.summary}
+            </p>
+          </Card>
+        )}
+        <div className="space-y-3">
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500">
+            ORGS
+          </p>
+          <div className="space-y-3">
+            {profile.companies.map((c) => (
+              <Card
+                key={c.name}
+                className="p-4 transition-colors hover:border-slate-700"
+              >
+                <div className="flex items-baseline justify-between gap-3">
+                  <span className="font-mono text-xs text-blue-300/90">
+                    {c.name}
+                  </span>
+                  <span className="font-mono text-[10px] uppercase tracking-wider text-slate-500">
+                    {c.role}
+                  </span>
+                </div>
+                <p className="mt-2 text-xs leading-relaxed text-slate-400">
+                  {c.description}
+                </p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Section>
+  );
+}

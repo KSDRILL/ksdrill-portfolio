@@ -1,0 +1,109 @@
+{
+  "accentColor": "#2563EB",
+  "background": {
+    "base": "#020617",
+    "muted": "#020617",
+    "card": "#020617"
+  },
+  "text": {
+    "primary": "#F9FAFB",
+    "secondary": "#9CA3AF"
+  },
+  "home": {
+    "heroBadgeLabel": "Primary surface · Engineering narrative",
+    "heroBadgeLucide": "Sparkles",
+    "heroKicker": "ENGINEERING_PORTFOLIO / v1.MVP",
+    "heroMetricLabel": "BUILD_MODE",
+    "heroMetricValue": "SEQUENTIAL · PRODUCTION_GRADE",
+    "heroAsideTitle": "Operating model",
+    "heroAsideBody": "Design and documentation before code. One flagship system at a time — architecture, contracts, and validation gates that match how serious platforms ship.",
+    "primaryCtaLabel": "Open flagship systems",
+    "primaryCtaHref": "/flagship",
+    "secondaryCtaLabel": "Start from profile",
+    "secondaryCtaHref": "#profile",
+    "heroScrollHint": "DETAIL_FIRST · HOME",
+    "heroFooterNote": "Premium depth without noise: one accent, disciplined grids, and motion that respects reduction settings — calibrated for hiring managers who have seen a thousand templates.",
+    "narrative": {
+      "kicker": "02 // THESIS",
+      "title": "What this portfolio optimizes for",
+      "lucideIcon": "BookOpen",
+      "paragraphs": [
+        "This site is not a trophy wall of logos. It is a narrow, high-signal lens: how systems are framed before code, how contracts stay honest when backends change, and how delivery stays sequential when scope tries to explode.",
+        "Flagship work and toolchain depth live on their own routes so you can skim the story here, then open the evidence where it belongs — case studies with problem, architecture, and stack; stack grouped by layer instead of a chaotic badge grid.",
+        "If that matches how your team builds, the next step is a conversation, not a keyword match."
+      ]
+    },
+    "teasersSection": {
+      "kicker": "03 // ROUTES",
+      "title": "Where the evidence lives",
+      "description": "Home stays narrative. Catalogs and layer breakdowns stay on dedicated pages so nothing competes with the story."
+    },
+    "teasers": {
+      "flagship": {
+        "kicker": "FLAGSHIP_SYSTEMS",
+        "title": "Systems catalog",
+        "body": "Four platforms in flight — each with problem framing, architecture, stack, and phase. Built like products, documented like serious engineering.",
+        "ctaLabel": "Browse case studies",
+        "href": "/flagship",
+        "lucideIcon": "Layers"
+      },
+      "stack": {
+        "kicker": "TECHNICAL_STACK",
+        "title": "Toolchain by layer",
+        "body": "Frontend, API, data, AI, and delivery — the actual tools used to ship and operate platforms, organized for scanning by role.",
+        "ctaLabel": "View full stack",
+        "href": "/tech-stack",
+        "lucideIcon": "Code2"
+      }
+    }
+  },
+  "sections": {
+    "profile": {
+      "kicker": "01 // PROFILE",
+      "title": "Who I am",
+      "description": "Architecture-first engineer building large-scale platforms through owned studios — not slide decks."
+    },
+    "flagship": {
+      "kicker": "02 // FLAGSHIP_SYSTEMS",
+      "title": "Systems under active sequencing",
+      "description": "Each build follows the same backbone: Next.js surface, service layer, Prisma, PostgreSQL, and optional Python AI where intelligence is justified."
+    },
+    "stack": {
+      "kicker": "03 // TECHNICAL_STACK",
+      "title": "Stack and tooling",
+      "description": "A coherent toolchain for shipping typed, observable, maintainable systems — not a badge collage."
+    },
+    "contact": {
+      "kicker": "05 // CONTACT",
+      "title": "Let’s build something serious",
+      "description": "Pick a channel. Each opens in its native surface so threads stay fast and searchable.",
+      "body": "Open to software engineering roles and selective platform engagements.",
+      "subbody": "Email is fastest for technical threads; LinkedIn for formal introductions."
+    }
+  },
+  "hero": {
+    "backgroundImage": {
+      "desktop": "/images/hero-desktop.svg",
+      "mobile": "/images/hero-mobile.svg",
+      "fallback": "/images/hero-fallback.svg"
+    },
+    "backgroundAlt": "Abstract technology pattern representing system intelligence",
+    "backgroundSize": "cover",
+    "backgroundPosition": "center",
+    "overlay": {
+      "color": "#020617",
+      "opacity": 0.72,
+      "blur": false
+    }
+  },
+  "footer": {
+    "backgroundImage": "/images/footer-bg.svg",
+    "backgroundAlt": "Subtle geometric pattern behind footer",
+    "backgroundSize": "cover",
+    "backgroundPosition": "bottom right",
+    "overlay": {
+      "color": "#020617",
+      "opacity": 0.8
+    }
+  }
+}

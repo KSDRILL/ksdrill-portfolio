@@ -1,0 +1,42 @@
+{
+  "name": "Maluleke Kurhula Success",
+  "portraitSrc": "/images/portrait.png",
+  "portraitAlt": "Maluleke Kurhula Success — portrait",
+  "titles": ["Software Engineer", "AI Systems Architect"],
+  "summary": "I design and build scalable, production-grade platforms across SaaS, fintech, AI, and enterprise — using a locked, universal MVP blueprint that prioritizes architecture, documentation, and sequential delivery.",
+  "companies": [
+    {
+      "name": "KSDRILL SA",
+      "role": "Founder",
+      "description": "Technology studio demonstrating full-stack engineering, AI integration, and production deployment across multiple industries."
+    },
+    {
+      "name": "GrowthCore Solutions",
+      "role": "Co-founder",
+      "description": "Digital growth agency combining web development, marketing, and analytics to drive measurable growth for clients."
+    }
+  ],
+  "socialLinks": [
+    {
+      "type": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://za.linkedin.com/in/kurhula-success-maluleke-32153231a"
+    },
+    {
+      "type": "github",
+      "label": "GitHub",
+      "url": "https://github.com/KSDRILL"
+    },
+    {
+      "type": "email",
+      "label": "Email",
+      "url": "mailto:kurhula04s@gmail.com"
+    },
+    {
+      "type": "whatsapp",
+      "label": "WhatsApp",
+      "url": "https://wa.me/27640708649"
+    }
+  ]
+}
+

@@ -1,0 +1,27 @@
+import { cn } from "@/lib/utils/classNames";
+
+type CardProps = {
+  className?: string;
+  children: React.ReactNode;
+  variant?: "default" | "glow";
+};
+
+export default function Card({
+  className,
+  children,
+  variant = "default"
+}: CardProps) {
+  return (
+    <div
+      className={cn(
+        "rounded-2xl border border-slate-800/90 bg-slate-950/55 p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.03)_inset] backdrop-blur-sm motion-safe-hover-lift",
+        variant === "glow" &&
+          "border-blue-500/25 shadow-glow-sm hover:border-blue-400/40 hover:shadow-glow",
+        className
+      )}
+    >
+      {children}
+    </div>
+  );
+}
+

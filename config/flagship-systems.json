@@ -1,0 +1,65 @@
+{
+  "systems": [
+    {
+      "id": "fundslink-academy",
+      "name": "FundsLink Academy",
+      "lucideIcon": "GraduationCap",
+      "badgeColor": "#2563EB",
+      "status": "active-development",
+      "shortDescription": "National education funding platform connecting students with bursaries, NSFAS, SETA funds, scholarships, and emergency support.",
+      "longDescription": "FundsLink Academy addresses the fragmented landscape of bursary and scholarship applications in South Africa. It centralizes opportunities from NSFAS, SETAs, private bursaries, scholarships, and emergency funding into a single, structured application platform.",
+      "problem": "342,000+ students are excluded yearly due to fragmented bursary applications, duplicated processes, and unused funding sources spread across disconnected portals.",
+      "solution": "A single digital front door for funding, with structured eligibility capture, centralized applications, and an AI-assisted matching layer (future phase) that connects students to the best-fit opportunities.",
+      "architecture": "Next.js frontend, Next.js API Routes, service layer, Prisma, PostgreSQL, and a dedicated Python AI service (FastAPI) for scholarship matching in later phases.",
+      "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "FastAPI (future AI service)"],
+      "phase": "Phase 1 – Active Development",
+      "links": []
+    },
+    {
+      "id": "maphophe-community-system",
+      "name": "Maphophe Community System",
+      "lucideIcon": "Landmark",
+      "badgeColor": "#22C55E",
+      "status": "design-complete",
+      "shortDescription": "Digital governance platform for rural villages to coordinate communication, announcements, and service delivery.",
+      "longDescription": "Maphophe Community System provides a structured digital layer for village-level governance, enabling transparent announcements, tracked service requests, and community voting for decisions that affect residents.",
+      "problem": "Rural villages often lack digital infrastructure for governance, resulting in fragmented communication, informal service requests, and limited transparency for community decisions.",
+      "solution": "A governance-focused platform that centralizes announcements, service tickets, and polls so residents can stay informed and participate in local decision-making.",
+      "architecture": "Next.js frontend, Next.js API Routes, service layer, Prisma, PostgreSQL.",
+      "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
+      "phase": "Phase 2 – Design Complete",
+      "links": []
+    },
+    {
+      "id": "ksdrill-reserve-bank",
+      "name": "KSDRILL Reserve Bank",
+      "lucideIcon": "PiggyBank",
+      "badgeColor": "#0EA5E9",
+      "status": "design-complete",
+      "shortDescription": "Discipline-driven digital savings bank with goal setting, automated deposits, and interest tracking.",
+      "longDescription": "KSDRILL Reserve Bank is a savings-first digital banking concept focused on building discipline. It emphasizes consistent saving habits, structured goals, and transparent tracking over complex speculative products.",
+      "problem": "Many people struggle with consistent savings habits and lack accessible microfinance tools that encourage long-term discipline.",
+      "solution": "A platform that helps users define savings goals, automate contributions, and track progress and interest in a clear, behavior-friendly interface.",
+      "architecture": "Next.js frontend, Next.js API Routes, service layer, Prisma, PostgreSQL.",
+      "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
+      "phase": "Phase 3 – Design Complete",
+      "links": []
+    },
+    {
+      "id": "syncup",
+      "name": "SyncUp",
+      "lucideIcon": "Users2",
+      "badgeColor": "#F97316",
+      "status": "design-complete",
+      "shortDescription": "Creator collaboration platform with structured negotiation and privacy-first messaging.",
+      "longDescription": "SyncUp gives creators a safe and structured way to find collaborators, negotiate projects, and manage drop-based releases without leaking personal contact details.",
+      "problem": "Creators struggle to find serious collaborators, and existing platforms lack structured negotiation tools and privacy controls.",
+      "solution": "A negotiation-first collaboration layer with template-based proposals, a 10-message limit for focused conversations, and privacy-protecting contact workflows.",
+      "architecture": "Next.js frontend, Next.js API Routes, service layer, Prisma, PostgreSQL.",
+      "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
+      "phase": "Phase 4 – Design Complete",
+      "links": []
+    }
+  ]
+}
+

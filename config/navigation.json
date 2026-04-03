@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "id": "home",
+      "label": "Home",
+      "icon": "home",
+      "href": "/",
+      "roles": ["public"],
+      "group": "primary"
+    },
+    {
+      "id": "flagship",
+      "label": "Flagship Systems",
+      "icon": "layers",
+      "href": "/flagship",
+      "roles": ["public"],
+      "group": "primary"
+    },
+    {
+      "id": "tech-stack",
+      "label": "Tech Stack",
+      "icon": "cpu",
+      "href": "/tech-stack",
+      "roles": ["public"],
+      "group": "primary"
+    },
+    {
+      "id": "contact",
+      "label": "Contact",
+      "icon": "mail",
+      "href": "/contact",
+      "roles": ["public"],
+      "group": "secondary"
+    }
+  ]
+}
+
