@@ -1,5 +1,3 @@
-import fs from "node:fs";
-import path from "node:path";
 import {
   ApiConfigSchema,
   FeaturesConfigSchema,
@@ -18,52 +16,43 @@ import {
   type ContactConfig,
   type ThemeConfig
 } from "@/types/config";
-
-const rootDir = process.cwd();
-
-function readJson(filePath: string): unknown {
-  const absolute = path.join(rootDir, filePath);
-  const raw = fs.readFileSync(absolute, "utf-8");
-  return JSON.parse(raw);
-}
+import apiConfigJson from "@/config/api-config.json";
+import contactJson from "@/config/contact.json";
+import featuresJson from "@/config/features.json";
+import flagshipSystemsJson from "@/config/flagship-systems.json";
+import navigationJson from "@/config/navigation.json";
+import profileJson from "@/config/profile.json";
+import techStackJson from "@/config/tech-stack.json";
+import themeJson from "@/config/theme.json";
 
 export function loadProfile(): Profile {
-  const data = readJson("config/profile.json");
-  return ProfileSchema.parse(data);
+  return ProfileSchema.parse(profileJson);
 }
 
 export function loadFlagshipSystems(): FlagshipSystemsConfig {
-  const data = readJson("config/flagship-systems.json");
-  return FlagshipSystemsConfigSchema.parse(data);
+  return FlagshipSystemsConfigSchema.parse(flagshipSystemsJson);
 }
 
 export function loadTechStack(): TechStackConfig {
-  const data = readJson("config/tech-stack.json");
-  return TechStackConfigSchema.parse(data);
+  return TechStackConfigSchema.parse(techStackJson);
 }
 
 export function loadContactConfig(): ContactConfig {
-  const data = readJson("config/contact.json");
-  return ContactConfigSchema.parse(data);
+  return ContactConfigSchema.parse(contactJson);
 }
 
 export function loadNavigationConfig(): NavigationConfig {
-  const data = readJson("config/navigation.json");
-  return NavigationConfigSchema.parse(data);
+  return NavigationConfigSchema.parse(navigationJson);
 }
 
 export function loadThemeConfig(): ThemeConfig {
-  const data = readJson("config/theme.json");
-  return ThemeConfigSchema.parse(data);
+  return ThemeConfigSchema.parse(themeJson);
 }
 
 export function loadFeaturesConfig(): FeaturesConfig {
-  const data = readJson("config/features.json");
-  return FeaturesConfigSchema.parse(data);
+  return FeaturesConfigSchema.parse(featuresJson);
 }
 
 export function loadApiConfig(): ApiConfig {
-  const data = readJson("config/api-config.json");
-  return ApiConfigSchema.parse(data);
+  return ApiConfigSchema.parse(apiConfigJson);
 }
-
