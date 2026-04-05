@@ -16,7 +16,7 @@ async function HeroContent() {
   const BadgeIcon = lucideFromConfig(home.heroBadgeLucide);
 
   return (
-    <div className="relative mx-auto flex max-w-6xl flex-col gap-12 px-4 py-20 md:flex-row md:items-stretch md:py-28">
+    <div className="relative mx-auto flex min-h-0 max-w-6xl flex-col gap-12 px-4 py-12 sm:py-16 md:flex-row md:items-stretch md:py-24 lg:py-28">
       <div className="flex flex-1 flex-col justify-center space-y-8">
         <div className="space-y-4">
           <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/25 bg-blue-500/10 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.2em] text-blue-300/95">
@@ -27,11 +27,16 @@ async function HeroContent() {
             {home.heroKicker}
           </p>
           <div className="h-px w-14 bg-gradient-to-r from-blue-500 via-blue-400/50 to-transparent" />
-          <h1 className="max-w-xl text-4xl font-semibold tracking-tight text-slate-50 md:text-5xl lg:text-6xl">
-            {profile.name}
+          <h1 className="max-w-2xl text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl md:text-5xl lg:text-6xl">
+            {home.heroHeadline}
           </h1>
           <p className="max-w-xl text-base leading-relaxed text-slate-300 md:text-lg">
-            {profile.summary}
+            {home.heroSubline}
+          </p>
+          <p className="max-w-xl font-mono text-xs text-slate-500 md:text-sm">
+            <span className="text-slate-400">{profile.name}</span>
+            <span className="text-slate-600"> · </span>
+            <span>{profile.titles.join(" · ")}</span>
           </p>
         </div>
 
@@ -54,7 +59,7 @@ async function HeroContent() {
           <div className="flex flex-wrap items-center gap-3">
             <Link
               href={home.primaryCtaHref}
-              className="motion-safe-transition inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-glow-sm hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+              className="motion-safe-transition inline-flex min-h-[44px] items-center justify-center gap-2 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-glow-sm hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
             >
               {home.primaryCtaLabel}
               <ArrowRight className="h-4 w-4" aria-hidden />
@@ -62,9 +67,17 @@ async function HeroContent() {
             {home.secondaryCtaLabel && home.secondaryCtaHref ? (
               <Link
                 href={home.secondaryCtaHref}
-                className="motion-safe-transition inline-flex items-center justify-center rounded-lg border border-slate-600/90 bg-slate-950/40 px-5 py-2.5 text-sm font-semibold text-slate-100 backdrop-blur-sm hover:border-slate-500 hover:bg-slate-900/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+                className="motion-safe-transition inline-flex min-h-[44px] items-center justify-center rounded-lg border border-slate-600/90 bg-slate-950/40 px-5 py-2.5 text-sm font-semibold text-slate-100 backdrop-blur-sm hover:border-slate-500 hover:bg-slate-900/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
               >
                 {home.secondaryCtaLabel}
+              </Link>
+            ) : null}
+            {home.tertiaryCtaLabel && home.tertiaryCtaHref ? (
+              <Link
+                href={home.tertiaryCtaHref}
+                className="motion-safe-transition inline-flex min-h-[44px] items-center justify-center rounded-lg border border-slate-800/90 px-5 py-2.5 text-sm font-semibold text-slate-300 hover:border-slate-600 hover:text-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+              >
+                {home.tertiaryCtaLabel}
               </Link>
             ) : null}
           </div>

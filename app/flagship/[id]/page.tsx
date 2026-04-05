@@ -134,9 +134,31 @@ export default async function FlagshipDetailPage({ params }: Params) {
               Architecture
             </h2>
           </div>
-          <p className="text-sm leading-relaxed text-slate-300 whitespace-pre-line">
+          <p className="whitespace-pre-line text-sm leading-relaxed text-slate-300">
             {system.architecture}
           </p>
+          {system.architectureDiagramSrc ? (
+            <figure className="mt-8 space-y-3">
+              <div className="overflow-hidden rounded-xl border border-slate-800/90 bg-slate-950/80">
+                <img
+                  src={system.architectureDiagramSrc}
+                  alt={
+                    system.architectureDiagramCaption ??
+                    `Architecture diagram for ${system.name}`
+                  }
+                  className="h-auto w-full"
+                  width={920}
+                  height={420}
+                  loading="lazy"
+                />
+              </div>
+              {system.architectureDiagramCaption ? (
+                <figcaption className="text-xs leading-relaxed text-slate-500">
+                  {system.architectureDiagramCaption}
+                </figcaption>
+              ) : null}
+            </figure>
+          ) : null}
         </Card>
 
         <Card className="border-slate-800/85">

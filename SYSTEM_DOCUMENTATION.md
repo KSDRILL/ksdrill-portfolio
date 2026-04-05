@@ -1,3 +1,7 @@
+## 0. Active pre-implementation delta
+
+For the **current upgrade cycle** (trust strip, hero refresh, `/methodology`, `POST /api/contact`, v12.0 navigation, flagship architecture evidence), see **`SYSTEM_DOCUMENTATION_DELTA.md`**. Where that delta explicitly conflicts with this file (for example, contact **form** in v1 versus link-only contact), **the delta takes precedence** until the two documents are merged after ship.
+
 ## 1. System Overview
 
 - **System name**: Maluleke Kurhula Success – Engineering Portfolio

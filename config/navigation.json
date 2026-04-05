@@ -9,8 +9,16 @@
       "group": "primary"
     },
     {
+      "id": "methodology",
+      "label": "Methodology",
+      "icon": "bookOpen",
+      "href": "/methodology",
+      "roles": ["public"],
+      "group": "primary"
+    },
+    {
       "id": "flagship",
-      "label": "Flagship Systems",
+      "label": "Flagship",
       "icon": "layers",
       "href": "/flagship",
       "roles": ["public"],
@@ -34,4 +42,3 @@
     }
   ]
 }
-

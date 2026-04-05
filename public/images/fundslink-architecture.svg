@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="fl-bg" x1="0" y1="0" x2="920" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020617"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <marker id="fl-arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#475569"/>
+    </marker>
+    <marker id="fl-arr-down" markerWidth="8" markerHeight="8" refX="4" refY="8" orient="auto">
+      <path d="M0 0 L8 8 L0 8 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="920" height="420" rx="16" fill="url(#fl-bg)"/>
+  <text x="460" y="36" text-anchor="middle" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.2em">FUNDSLINK ACADEMY — HIGH-LEVEL ARCHITECTURE</text>
+  <rect x="48" y="80" width="160" height="72" rx="8" stroke="#3b82f6" stroke-width="1.5" fill="#1e293b"/>
+  <text x="128" y="112" text-anchor="middle" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Web clients</text>
+  <text x="128" y="132" text-anchor="middle" fill="#64748b" font-family="ui-monospace, monospace" font-size="10">Next.js · SSR/CSR</text>
+  <rect x="280" y="80" width="180" height="72" rx="8" stroke="#3b82f6" stroke-width="1.5" fill="#172554"/>
+  <text x="370" y="112" text-anchor="middle" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13" font-weight="600">API routes</text>
+  <text x="370" y="132" text-anchor="middle" fill="#64748b" font-family="ui-monospace, monospace" font-size="10">Contracts · validation</text>
+  <rect x="524" y="80" width="180" height="72" rx="8" stroke="#60a5fa" stroke-width="1.5" fill="#1e293b"/>
+  <text x="614" y="112" text-anchor="middle" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Service layer</text>
+  <text x="614" y="132" text-anchor="middle" fill="#64748b" font-family="ui-monospace, monospace" font-size="10">Domain logic</text>
+  <rect x="748" y="80" width="124" height="72" rx="8" stroke="#22c55e" stroke-width="1.5" fill="#052e16"/>
+  <text x="810" y="112" text-anchor="middle" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13" font-weight="600">PostgreSQL</text>
+  <text x="810" y="132" text-anchor="middle" fill="#64748b" font-family="ui-monospace, monospace" font-size="10">Prisma ORM</text>
+  <path d="M208 116h64" stroke="#475569" stroke-width="2" marker-end="url(#fl-arr)"/>
+  <path d="M460 116h56" stroke="#475569" stroke-width="2" marker-end="url(#fl-arr)"/>
+  <path d="M704 116h40" stroke="#475569" stroke-width="2" marker-end="url(#fl-arr)"/>
+  <rect x="280" y="220" width="424" height="88" rx="8" stroke="#f97316" stroke-dasharray="6 4" stroke-width="1.5" fill="#431407"/>
+  <text x="492" y="256" text-anchor="middle" fill="#fdba74" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Planned: FastAPI scholarship-matching service</text>
+  <text x="492" y="278" text-anchor="middle" fill="#9a3412" font-family="ui-monospace, monospace" font-size="10">LangChain / embeddings — async integration to API layer</text>
+  <path d="M370 152v52" stroke="#64748b" stroke-width="1.5" marker-end="url(#fl-arr-down)"/>
+  <path d="M614 152v52" stroke="#64748b" stroke-width="1.5" marker-end="url(#fl-arr-down)"/>
+  <rect x="48" y="332" width="824" height="56" rx="8" stroke="#334155" stroke-width="1" fill="#0f172a"/>
+  <text x="460" y="366" text-anchor="middle" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="10">Solid: Phase 1 · Dashed: future AI lane · Clients never talk to the database directly.</text>
+</svg>

@@ -55,13 +55,18 @@ export default async function WhoIAmSection() {
                 key={c.name}
                 className="p-4 transition-colors hover:border-slate-700"
               >
-                <div className="flex items-baseline justify-between gap-3">
+                <div className="flex flex-wrap items-baseline justify-between gap-3">
                   <span className="font-mono text-xs text-blue-300/90">
                     {c.name}
                   </span>
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-slate-500">
-                    {c.role}
-                  </span>
+                  <div className="flex flex-wrap items-center gap-2 font-mono text-[10px] uppercase tracking-wider text-slate-500">
+                    <span>{c.role}</span>
+                    {c.periodLabel ? (
+                      <span className="rounded border border-slate-800/90 px-2 py-0.5 text-slate-400">
+                        {c.periodLabel}
+                      </span>
+                    ) : null}
+                  </div>
                 </div>
                 <p className="mt-2 text-xs leading-relaxed text-slate-400">
                   {c.description}

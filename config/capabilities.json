@@ -1,0 +1,47 @@
+{
+  "kicker": "04 // CAPABILITIES",
+  "title": "Tooling organized by responsibility",
+  "description": "Capabilities grouped the way hiring teams scan them — not a flat badge wall. Depth and relationships live on the tech stack page.",
+  "groups": [
+    {
+      "id": "frontend",
+      "title": "Frontend & product surface",
+      "items": [
+        "Next.js (App Router)",
+        "React 18",
+        "TypeScript",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "id": "systems",
+      "title": "Systems & delivery",
+      "items": [
+        "MVP scoping and sequential groups",
+        "Config-driven layouts and content",
+        "Typed API contracts (Zod)",
+        "Vercel deployment"
+      ]
+    },
+    {
+      "id": "data-ai",
+      "title": "Data & intelligence (platform work)",
+      "items": [
+        "Prisma · PostgreSQL",
+        "Service layers and API routes",
+        "Python / FastAPI where AI belongs"
+      ]
+    },
+    {
+      "id": "tooling",
+      "title": "Engineering workflow",
+      "items": [
+        "GitHub",
+        "Cursor-assisted development",
+        "React Hook Form · TanStack Query"
+      ]
+    }
+  ],
+  "stackCtaLabel": "Browse full stack by layer",
+  "stackHref": "/tech-stack"
+}

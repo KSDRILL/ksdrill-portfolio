@@ -7,6 +7,8 @@ import {
   TechStackConfigSchema,
   ContactConfigSchema,
   ThemeConfigSchema,
+  MethodologyConfigSchema,
+  CapabilitiesConfigSchema,
   type ApiConfig,
   type FeaturesConfig,
   type NavigationConfig,
@@ -14,12 +16,16 @@ import {
   type FlagshipSystemsConfig,
   type TechStackConfig,
   type ContactConfig,
-  type ThemeConfig
+  type ThemeConfig,
+  type MethodologyConfig,
+  type CapabilitiesConfig
 } from "@/types/config";
 import apiConfigJson from "@/config/api-config.json";
+import capabilitiesJson from "@/config/capabilities.json";
 import contactJson from "@/config/contact.json";
 import featuresJson from "@/config/features.json";
 import flagshipSystemsJson from "@/config/flagship-systems.json";
+import methodologyJson from "@/config/methodology.json";
 import navigationJson from "@/config/navigation.json";
 import profileJson from "@/config/profile.json";
 import techStackJson from "@/config/tech-stack.json";
@@ -55,4 +61,12 @@ export function loadFeaturesConfig(): FeaturesConfig {
 
 export function loadApiConfig(): ApiConfig {
   return ApiConfigSchema.parse(apiConfigJson);
+}
+
+export function loadMethodologyConfig(): MethodologyConfig {
+  return MethodologyConfigSchema.parse(methodologyJson);
+}
+
+export function loadCapabilitiesConfig(): CapabilitiesConfig {
+  return CapabilitiesConfigSchema.parse(capabilitiesJson);
 }

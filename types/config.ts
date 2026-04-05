@@ -16,7 +16,8 @@ export const ProfileSchema = z.object({
     z.object({
       name: z.string(),
       role: z.string(),
-      description: z.string()
+      description: z.string(),
+      periodLabel: z.string().optional()
     })
   ),
   socialLinks: z.array(SocialLinkSchema)
@@ -33,6 +34,8 @@ export const FlagshipSystemSchema = z.object({
   problem: z.string(),
   solution: z.string(),
   architecture: z.string(),
+  architectureDiagramSrc: z.string().optional(),
+  architectureDiagramCaption: z.string().optional(),
   stack: z.array(z.string()),
   phase: z.string(),
   links: z.array(
@@ -84,6 +87,12 @@ export const NavigationConfigSchema = z.object({
   items: z.array(NavigationItemSchema)
 });
 
+const TrustStripItemSchema = z.object({
+  label: z.string(),
+  value: z.string(),
+  href: z.string().optional()
+});
+
 const HomeTeaserSchema = z.object({
   kicker: z.string(),
   title: z.string(),
@@ -93,7 +102,19 @@ const HomeTeaserSchema = z.object({
   lucideIcon: z.string().default("Layers")
 });
 
+const FeaturedFlagshipHomeSchema = z.object({
+  kicker: z.string(),
+  headline: z.string(),
+  systemId: z.string(),
+  problem: z.string(),
+  solution: z.string(),
+  result: z.string(),
+  ctaLabel: z.string()
+});
+
 const HomeCopySchema = z.object({
+  heroHeadline: z.string(),
+  heroSubline: z.string(),
   heroBadgeLabel: z.string(),
   heroBadgeLucide: z.string().default("Sparkles"),
   heroKicker: z.string(),
@@ -105,6 +126,12 @@ const HomeCopySchema = z.object({
   primaryCtaHref: z.string(),
   secondaryCtaLabel: z.string().optional(),
   secondaryCtaHref: z.string().optional(),
+  tertiaryCtaLabel: z.string().optional(),
+  tertiaryCtaHref: z.string().optional(),
+  trustStrip: z.object({
+    items: z.array(TrustStripItemSchema).min(1).max(8)
+  }),
+  featuredFlagship: FeaturedFlagshipHomeSchema,
   heroScrollHint: z.string(),
   heroFooterNote: z.string(),
   narrative: z.object({
@@ -146,6 +173,7 @@ export const ThemeConfigSchema = z.object({
   home: HomeCopySchema,
   sections: z.object({
     profile: SectionCopySchema,
+    capabilities: SectionCopySchema,
     flagship: SectionCopySchema,
     stack: SectionCopySchema,
     contact: SectionCopySchema
@@ -202,3 +230,34 @@ export type ThemeConfig = z.infer<typeof ThemeConfigSchema>;
 export type FeaturesConfig = z.infer<typeof FeaturesConfigSchema>;
 export type ApiConfig = z.infer<typeof ApiConfigSchema>;
 
+export const MethodologySectionSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  body: z.string()
+});
+
+export const MethodologyConfigSchema = z.object({
+  pageTitle: z.string(),
+  pageDescription: z.string(),
+  intro: z.string(),
+  sections: z.array(MethodologySectionSchema),
+  repoUrl: z.string().url().optional()
+});
+
+export const CapabilityGroupSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  items: z.array(z.string())
+});
+
+export const CapabilitiesConfigSchema = z.object({
+  kicker: z.string(),
+  title: z.string(),
+  description: z.string().optional(),
+  groups: z.array(CapabilityGroupSchema),
+  stackCtaLabel: z.string(),
+  stackHref: z.string()
+});
+
+export type MethodologyConfig = z.infer<typeof MethodologyConfigSchema>;
+export type CapabilitiesConfig = z.infer<typeof CapabilitiesConfigSchema>;

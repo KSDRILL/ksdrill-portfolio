@@ -10,7 +10,9 @@
       "longDescription": "FundsLink Academy addresses the fragmented landscape of bursary and scholarship applications in South Africa. It centralizes opportunities from NSFAS, SETAs, private bursaries, scholarships, and emergency funding into a single, structured application platform.",
       "problem": "342,000+ students are excluded yearly due to fragmented bursary applications, duplicated processes, and unused funding sources spread across disconnected portals.",
       "solution": "A single digital front door for funding, with structured eligibility capture, centralized applications, and an AI-assisted matching layer (future phase) that connects students to the best-fit opportunities.",
-      "architecture": "Next.js frontend, Next.js API Routes, service layer, Prisma, PostgreSQL, and a dedicated Python AI service (FastAPI) for scholarship matching in later phases.",
+      "architecture": "Next.js frontend, Next.js API Routes, service layer, Prisma, PostgreSQL, and a dedicated Python AI service (FastAPI) for scholarship matching in later phases. Students and admins use the web surface; HTTP hits API routes with Zod-validated payloads; the service layer owns domain rules; Prisma is the only path to PostgreSQL. A future FastAPI worker will handle embeddings and matching without bypassing contracts.",
+      "architectureDiagramSrc": "/images/fundslink-architecture.svg",
+      "architectureDiagramCaption": "Request path: browser → Next.js API routes → service layer → Prisma → PostgreSQL. Dashed block: planned FastAPI + LangChain matching service integrated through the same API boundary.",
       "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "FastAPI (future AI service)"],
       "phase": "Phase 1 – Active Development",
       "links": []

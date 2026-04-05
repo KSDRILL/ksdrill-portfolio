@@ -1,0 +1,38 @@
+{
+  "pageTitle": "Methodology",
+  "pageDescription": "How this portfolio and my systems are built — MVP gates, sequential delivery, and mobile-first standards aligned with a locked frontend blueprint.",
+  "intro": "This page is a condensed view of the engineering rules I use on real products: document before code, ship a credible v1, validate, then extend. The same constraints shaped this site.",
+  "repoUrl": "https://github.com/KSDRILL/ksdrill-portfolio",
+  "sections": [
+    {
+      "id": "mvp-gates",
+      "title": "Five MVP gate questions",
+      "body": "Before a feature lands in v1, it must pass: (1) Does it validate the core hypothesis? (2) Can users reach the main goal without it? (3) Is complexity proportional to value? (4) Can we observe success? (5) Is there a simpler alternative? If any answer is doubtful, the work moves to v2+."
+    },
+    {
+      "id": "sequential-groups",
+      "title": "Sequential groups, not parallel chaos",
+      "body": "Work is organized in dependency-ordered groups: a small core foundation first (layout, config, API client, shared UI), then v1 features that only depend on that core. Later groups stay as placeholders until feedback justifies them — avoiding speculative surface area."
+    },
+    {
+      "id": "mobile-first",
+      "title": "Mobile-first and brand visibility",
+      "body": "Layouts are designed from 320px upward. The hero uses min-height and responsive padding, not fixed height traps. The brand stays visible at every breakpoint. Touch targets aim for at least 44×44px for primary actions."
+    },
+    {
+      "id": "navigation",
+      "title": "Navigation pattern",
+      "body": "Desktop navigation stays horizontal with overlays for depth — nothing that pushes the page down like a tall accordion. On small screens, navigation uses horizontal scroll or a bottom sheet so context is not lost."
+    },
+    {
+      "id": "forms-and-async",
+      "title": "Forms, validation, and async feedback",
+      "body": "Forms use schema validation with inline field errors, disabled submit while pending, and clear success or failure messaging. Async views use skeletons or spinners — not blank screens."
+    },
+    {
+      "id": "config-driven",
+      "title": "Configuration-driven UI",
+      "body": "Theme, navigation, and section copy live in typed JSON so the same components can evolve without scattershot edits. API contracts are defined even when v1 is backed by static data, so real services can drop in later."
+    }
+  ]
+}

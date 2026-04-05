@@ -8,11 +8,13 @@
     {
       "name": "KSDRILL SA",
       "role": "Founder",
+      "periodLabel": "Ongoing",
       "description": "Technology studio demonstrating full-stack engineering, AI integration, and production deployment across multiple industries."
     },
     {
       "name": "GrowthCore Solutions",
       "role": "Co-founder",
+      "periodLabel": "Ongoing",
       "description": "Digital growth agency combining web development, marketing, and analytics to drive measurable growth for clients."
     }
   ],

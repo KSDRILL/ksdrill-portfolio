@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { loadThemeConfig } from "@/lib/config-loader";
 import BackgroundImage from "@/components/ui/BackgroundImage";
 
@@ -24,9 +25,15 @@ export default function Footer() {
               Built with Next.js, TypeScript, and a locked MVP blueprint.
             </div>
           </div>
-          <div className="flex gap-4">
-            <span>v1 · MVP</span>
-            <span>Designed for recruiters and hiring teams</span>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <Link
+              href="/methodology"
+              className="text-slate-300 underline-offset-2 hover:text-white hover:underline"
+            >
+              Methodology
+            </Link>
+            <span className="text-slate-500">v1 · MVP</span>
+            <span className="hidden sm:inline">Designed for recruiters and hiring teams</span>
           </div>
         </div>
       </BackgroundImage>
