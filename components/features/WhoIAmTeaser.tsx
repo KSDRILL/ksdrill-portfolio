@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Briefcase, GraduationCap, Layers, Zap } from "lucide-react";
+import { ArrowRight, Briefcase, GraduationCap, Layers, Zap, Github } from "lucide-react";
 import Section from "@/components/ui/Section";
 import { fetchProfile } from "@/lib/api/portfolio";
 
@@ -47,6 +47,37 @@ export default function WhoIAmTeaser() {
           <p className="font-mono text-[10px] uppercase tracking-wider text-slate-500 mb-1">Industries</p>
           <p className="text-sm font-medium text-slate-200">{profile.industries.length}+</p>
           <p className="font-mono text-[10px] text-slate-500 mt-0.5">Fintech · Healthcare · More</p>
+        </div>
+      </div>
+
+      {/* Organizations with GitHub links */}
+      <div className="flex flex-col gap-3">
+        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500">Organizations</p>
+        <div className="space-y-3">
+          {(profile.organizations ?? []).map((org: { name: string; role: string; description?: string; periodLabel?: string; githubUrl?: string }) => (
+            <div key={org.name} className="wib-org-card">
+              <div className="flex items-start justify-between gap-3">
+                <div className="min-w-0">
+                  <p className="wib-org-name">{org.name}</p>
+                  <p className="wib-org-role">{org.role}</p>
+                  {org.periodLabel ? (
+                    <span className="wib-org-period">{org.periodLabel}</span>
+                  ) : null}
+                </div>
+                {org.githubUrl ? (
+                  <a
+                    href={org.githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="wib-github-btn"
+                    aria-label={`${org.name} on GitHub`}
+                  >
+                    <Github className="h-4 w-4" aria-hidden />
+                  </a>
+                ) : null}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 

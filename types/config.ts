@@ -34,7 +34,8 @@ export const ProfileSchema = z.object({
       name: z.string(),
       role: z.string(),
       description: z.string(),
-      periodLabel: z.string().optional()
+      periodLabel: z.string().optional(),
+      githubUrl: z.string().url().or(z.literal("")).optional()
     })
   ).optional(),
   workExperience: z.array(WorkExperienceItemSchema).optional(),
@@ -87,7 +88,8 @@ export const FlagshipSystemSchema = z.object({
       url: z.string().url()
     })
   ).optional(),
-  liveUrl: z.string().optional()
+  githubUrl: z.string().url().or(z.literal("")).optional(),
+  liveUrl: z.string().url().or(z.literal("")).optional()
 });
 
 export const FlagshipSystemsConfigSchema = z.object({

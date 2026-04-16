@@ -16,6 +16,7 @@
   "organizations": [
     {
       "name": "KSDRILL SA",
+      "githubUrl": "",
       "role": "Founder & Developer",
       "periodLabel": "Ongoing",
       "description": "Technology studio demonstrating full-stack engineering, AI integration, and production deployment across multiple industries."

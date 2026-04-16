@@ -15,7 +15,9 @@
       "architectureDiagramCaption": "Request path: browser → Next.js API routes → service layer → Prisma → PostgreSQL. Dashed block: planned FastAPI + LangChain matching service integrated through the same API boundary.",
       "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "FastAPI (future AI service)"],
       "phase": "Phase 1 – Active Development",
-      "links": []
+      "links": [],
+      "githubUrl": "https://github.com/MALULEKE-KS/fundslink-academy",
+      "liveUrl": ""
     },
     {
       "id": "maphophe-community-system",
@@ -30,7 +32,9 @@
       "architecture": "Next.js frontend, Next.js API Routes, service layer, Prisma, PostgreSQL.",
       "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
       "phase": "Phase 2 – Design Complete",
-      "links": []
+      "links": [],
+      "githubUrl": "",
+      "liveUrl": ""
     },
     {
       "id": "ksdrill-reserve-bank",
@@ -45,7 +49,9 @@
       "architecture": "Next.js frontend, Next.js API Routes, service layer, Prisma, PostgreSQL.",
       "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
       "phase": "Phase 3 – Design Complete",
-      "links": []
+      "links": [],
+      "githubUrl": "",
+      "liveUrl": ""
     },
     {
       "id": "syncup",
@@ -60,7 +66,9 @@
       "architecture": "Next.js frontend, Next.js API Routes, service layer, Prisma, PostgreSQL.",
       "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
       "phase": "Phase 4 – Design Complete",
-      "links": []
+      "links": [],
+      "githubUrl": "",
+      "liveUrl": ""
     }
   ]
 }

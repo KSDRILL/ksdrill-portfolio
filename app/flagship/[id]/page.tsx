@@ -7,7 +7,7 @@ import Badge from "@/components/ui/Badge";
 import { fetchFlagshipSystems } from "@/lib/api/portfolio";
 import type { FlagshipSystem } from "@/types/config";
 import { lucideFromConfig, statusLucideIcon } from "@/lib/utils/lucide-from-config";
-import { ChevronRight, Code2, Lightbulb, Network, Target } from "lucide-react";
+import { ChevronRight, Code2, ExternalLink, Github, Lightbulb, Network, Target } from "lucide-react";
 
 type Params = {
   params: {
@@ -196,10 +196,36 @@ export default async function FlagshipDetailPage({ params }: Params) {
           </div>
         </Card>
 
-        <div className="flex justify-between border-t border-slate-800/80 pt-8">
+        <div className="flex flex-wrap gap-4 border-t border-slate-800/80 pt-8">
+          {(system.githubUrl || system.liveUrl) && (
+            <div className="flex flex-wrap gap-3">
+              {system.githubUrl && (
+                <a
+                  href={system.githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg border border-slate-700/80 bg-slate-900/60 px-4 py-2 text-sm font-semibold text-slate-200 transition-colors hover:border-slate-500 hover:text-slate-100"
+                >
+                  <Github className="h-4 w-4" aria-hidden />
+                  View Source
+                </a>
+              )}
+              {system.liveUrl && (
+                <a
+                  href={system.liveUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg border border-blue-500/40 bg-blue-500/10 px-4 py-2 text-sm font-semibold text-blue-300 transition-colors hover:border-blue-400/60 hover:text-blue-200"
+                >
+                  <ExternalLink className="h-4 w-4" aria-hidden />
+                  Live Demo
+                </a>
+              )}
+            </div>
+          )}
           <Link
             href="/flagship"
-            className="text-sm font-semibold text-blue-400 hover:text-blue-300"
+            className="ml-auto text-sm font-semibold text-blue-400 hover:text-blue-300"
           >
             ← All systems
           </Link>
