@@ -1,7 +1,10 @@
+"use client";
+
 import { type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { ArrowRight, Scale, HeartPulse, Building2, GraduationCap, Landmark, ShoppingCart } from "lucide-react";
 import Section from "@/components/ui/Section";
+import "@/app/what-i-build.css";
 
 const iconMap: Record<string, LucideIcon> = {
   Scale, HeartPulse, Building2, GraduationCap, Landmark, ShoppingCart

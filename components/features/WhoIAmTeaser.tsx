@@ -1,68 +1,66 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowRight, Briefcase, GraduationCap, Layers, Zap, Github } from "lucide-react";
 import Section from "@/components/ui/Section";
+import Card from "@/components/ui/Card";
 import { fetchProfile } from "@/lib/api/portfolio";
+import "@/app/what-i-build.css";
 
-export default function WhoIAmTeaser() {
-  const profile = require("@/config/profile.json");
+export default async function WhoIAmTeaser() {
+  const profile = await fetchProfile();
 
   return (
     <Section id="profile" className="wib-teaser-section space-y-8">
-      <div className="flex items-start gap-4">
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-blue-500/25 bg-blue-500/10 text-blue-300">
-          <Zap className="h-6 w-6" aria-hidden />
-        </div>
-        <div className="space-y-1">
-          <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-blue-400/90">
-            01 // Profile
-          </p>
-          <h2 className="text-2xl font-semibold tracking-tight text-slate-50">
-            Maluleke Kurhula Success
-          </h2>
-          <p className="font-mono text-xs text-slate-400">
+      <div className="space-y-1">
+        <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-blue-400/90">
+          01 // Who I Am
+        </p>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-50">
+          {profile.name}
+        </h2>
+      </div>
+
+      <div className="flex flex-col gap-4">
+        <p className="text-sm leading-relaxed text-slate-400">
+          {profile.summary}
+        </p>
+
+        <div className="flex flex-col gap-3">
+          <p className="text-xs font-medium text-slate-300">
             {profile.titles.join(" · ")}
           </p>
+          <div className="flex flex-wrap items-center gap-3">
+            {profile.socialLinks.slice(0, 2).map((link) => (
+              <a
+                key={link.type}
+                href={link.url}
+                target="_blank"
+                rel="noreferrer"
+                className="wib-social-pill"
+              >
+                <Github className="h-3.5 w-3.5" aria-hidden />
+                {link.label}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 
-      <p className="text-sm leading-relaxed text-slate-300 max-w-2xl">
-        {profile.tagline}
-      </p>
-
-      <div className="grid gap-3 sm:grid-cols-3">
-        <div className="rounded-xl border border-slate-800/80 bg-slate-950/50 p-4 text-center">
-          <Briefcase className="mx-auto mb-2 h-5 w-5 text-blue-400" aria-hidden />
-          <p className="font-mono text-[10px] uppercase tracking-wider text-slate-500 mb-1">Organizations</p>
-          <p className="text-sm font-medium text-slate-200">{profile.organizations.length}</p>
-          <p className="font-mono text-[10px] text-slate-500 mt-0.5">Founder · Co-founder</p>
-        </div>
-        <div className="rounded-xl border border-slate-800/80 bg-slate-950/50 p-4 text-center">
-          <GraduationCap className="mx-auto mb-2 h-5 w-5 text-emerald-400" aria-hidden />
-          <p className="font-mono text-[10px] uppercase tracking-wider text-slate-500 mb-1">Education</p>
-          <p className="text-sm font-medium text-slate-200">BSc CS & Math</p>
-          <p className="font-mono text-[10px] text-slate-500 mt-0.5">Final Year · NWU</p>
-        </div>
-        <div className="rounded-xl border border-slate-800/80 bg-slate-950/50 p-4 text-center">
-          <Layers className="mx-auto mb-2 h-5 w-5 text-amber-400" aria-hidden />
-          <p className="font-mono text-[10px] uppercase tracking-wider text-slate-500 mb-1">Industries</p>
-          <p className="text-sm font-medium text-slate-200">{profile.industries.length}+</p>
-          <p className="font-mono text-[10px] text-slate-500 mt-0.5">Fintech · Healthcare · More</p>
-        </div>
-      </div>
-
-      {/* Organizations with GitHub links */}
       <div className="flex flex-col gap-3">
-        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500">Organizations</p>
-        <div className="space-y-3">
-          {(profile.organizations ?? []).map((org: { name: string; role: string; description?: string; periodLabel?: string; githubUrl?: string }) => (
-            <div key={org.name} className="wib-org-card">
+        <p className="text-xs font-medium uppercase tracking-widest text-slate-500">
+          Organizations
+        </p>
+        <div className="flex flex-col gap-3">
+          {profile.organizations?.map((org) => (
+            <Card key={org.name} className="wib-org-card">
               <div className="flex items-start justify-between gap-3">
                 <div className="min-w-0">
                   <p className="wib-org-name">{org.name}</p>
                   <p className="wib-org-role">{org.role}</p>
-                  {org.periodLabel ? (
-                    <span className="wib-org-period">{org.periodLabel}</span>
-                  ) : null}
+                  {org.periodLabel && (
+                    <p className="wib-org-period">{org.periodLabel}</p>
+                  )}
                 </div>
                 {org.githubUrl ? (
                   <a
@@ -70,19 +68,18 @@ export default function WhoIAmTeaser() {
                     target="_blank"
                     rel="noreferrer"
                     className="wib-github-btn"
-                    aria-label={`${org.name} on GitHub`}
                   >
-                    <Github className="h-4 w-4" aria-hidden />
+                    <Github className="h-3.5 w-3.5" aria-hidden />
                   </a>
                 ) : null}
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
 
       <div className="flex flex-wrap gap-3">
-        <Link href="/experience" className="wib-cta-secondary">
+        <Link href="/experience" className="wib-cta-primary">
           Experience <ArrowRight className="h-4 w-4" aria-hidden />
         </Link>
         <Link href="/education" className="wib-cta-secondary">
