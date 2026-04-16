@@ -1,43 +1,85 @@
 import Link from "next/link";
-import { loadThemeConfig } from "@/lib/config-loader";
-import BackgroundImage from "@/components/ui/BackgroundImage";
+import { loadProfile } from "@/lib/config-loader";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
-  const theme = loadThemeConfig();
+  const profile = loadProfile();
+
+  const socialIcons: Record<string, typeof Github> = {
+    github: Github,
+    linkedin: Linkedin,
+    email: Mail
+  };
 
   return (
-    <footer className="mt-16 border-t border-slate-800">
-      <BackgroundImage
-        className="py-8"
-        imageDesktop={theme.footer.backgroundImage ?? "/images/footer-bg.svg"}
-        imageMobile={theme.footer.backgroundImage ?? "/images/footer-bg.svg"}
-        fallback={theme.footer.backgroundImage ?? "/images/footer-bg.svg"}
-        alt={theme.footer.backgroundAlt ?? "Footer background"}
-        backgroundSize={theme.footer.backgroundSize ?? "cover"}
-        backgroundPosition={theme.footer.backgroundPosition ?? "bottom right"}
-        overlayColor={theme.footer.overlay?.color ?? "#020617"}
-        overlayOpacity={theme.footer.overlay?.opacity ?? 0.8}
-      >
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 text-xs text-slate-400 md:flex-row md:items-center md:justify-between">
-          <div>
-            <div>Maluleke Kurhula Success – Engineering Portfolio</div>
-            <div className="text-slate-500">
-              Built with Next.js, TypeScript, and a locked MVP blueprint.
+    <footer className="mt-16 border-t border-slate-800/80 bg-slate-950/80">
+      <div className="mx-auto max-w-6xl px-4 py-8">
+        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div className="space-y-1">
+            <p className="font-mono text-sm font-semibold text-slate-200">
+              {profile.name}
+            </p>
+            <p className="font-mono text-xs text-slate-500">
+              {profile.education?.institution} · {profile.education?.degree}
+            </p>
+            <p className="text-xs text-slate-500">
+              Building practical digital systems that solve real-world challenges.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
+            <div className="flex items-center gap-x-4 gap-y-2 sm:flex-wrap">
+              {profile.socialLinks.map((link) => {
+                const Icon = socialIcons[link.type];
+                return (
+                  <a
+                    key={link.type}
+                    href={link.url}
+                    target={link.url.startsWith("http") ? "_blank" : undefined}
+                    rel={link.url.startsWith("http") ? "noreferrer" : undefined}
+                    className="inline-flex items-center gap-1.5 text-xs text-slate-400 transition-colors hover:text-slate-200"
+                  >
+                    {Icon ? <Icon className="h-3.5 w-3.5" aria-hidden /> : null}
+                    <span>{link.type.charAt(0).toUpperCase() + link.type.slice(1)}</span>
+                  </a>
+                );
+              })}
             </div>
           </div>
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+        </div>
+
+        <div className="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-slate-800/80 pt-6">
+          <p className="text-xs text-slate-500">
+            © 2026 {profile.name}. All rights reserved.
+          </p>
+          <div className="flex items-center gap-4">
             <Link
               href="/methodology"
-              className="text-slate-300 underline-offset-2 hover:text-white hover:underline"
+              className="text-xs text-slate-500 transition-colors hover:text-slate-300"
             >
-              Methodology
+              Philosophy
             </Link>
-            <span className="text-slate-500">v1 · MVP</span>
-            <span className="hidden sm:inline">Designed for recruiters and hiring teams</span>
+            <Link
+              href="/flagship"
+              className="text-xs text-slate-500 transition-colors hover:text-slate-300"
+            >
+              Projects
+            </Link>
+            <Link
+              href="/contact"
+              className="text-xs text-slate-500 transition-colors hover:text-slate-300"
+            >
+              Contact
+            </Link>
           </div>
         </div>
-      </BackgroundImage>
+
+        <div className="mt-4 text-center">
+          <p className="text-xs text-slate-600">
+            Built with Next.js · Tailwind CSS
+          </p>
+        </div>
+      </div>
     </footer>
   );
 }
-

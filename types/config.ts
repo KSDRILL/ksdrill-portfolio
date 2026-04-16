@@ -3,7 +3,7 @@ import { z } from "zod";
 export const SocialLinkSchema = z.object({
   type: z.enum(["linkedin", "github", "email", "whatsapp", "website"]),
   label: z.string(),
-  url: z.string().url()
+  url: z.string()
 });
 
 export const ProfileSchema = z.object({
@@ -11,7 +11,16 @@ export const ProfileSchema = z.object({
   portraitSrc: z.string().optional(),
   portraitAlt: z.string().optional(),
   titles: z.array(z.string()),
+  tagline: z.string(),
   summary: z.string(),
+  education: z.object({
+    degree: z.string(),
+    institution: z.string(),
+    status: z.string()
+  }).optional(),
+  location: z.string(),
+  openToWork: z.boolean().default(false),
+  openToWorkLabel: z.string().default("Open to work"),
   companies: z.array(
     z.object({
       name: z.string(),
@@ -20,7 +29,30 @@ export const ProfileSchema = z.object({
       periodLabel: z.string().optional()
     })
   ),
-  socialLinks: z.array(SocialLinkSchema)
+  socialLinks: z.array(SocialLinkSchema),
+  quickLinks: z.array(
+    z.object({
+      label: z.string(),
+      href: z.string(),
+      variant: z.enum(["primary", "secondary"]).default("primary")
+    })
+  ).optional(),
+  atAGlance: z.array(z.string()).optional(),
+  industries: z.array(z.string()).optional(),
+  whatICanBuild: z.string().optional(),
+  currentFocus: z.object({
+    quarter: z.string(),
+    areas: z.array(z.object({
+      title: z.string(),
+      description: z.string()
+    }))
+  }).optional(),
+  liveWork: z.array(z.object({
+    name: z.string(),
+    description: z.string(),
+    url: z.string(),
+    type: z.enum(["external", "internal"]).default("external")
+  })).optional()
 });
 
 export const FlagshipSystemSchema = z.object({
@@ -112,6 +144,11 @@ const FeaturedFlagshipHomeSchema = z.object({
   ctaLabel: z.string()
 });
 
+const CurrentFocusItemSchema = z.object({
+  title: z.string(),
+  description: z.string()
+});
+
 const HomeCopySchema = z.object({
   heroHeadline: z.string(),
   heroSubline: z.string(),
@@ -120,8 +157,8 @@ const HomeCopySchema = z.object({
   heroKicker: z.string(),
   heroMetricLabel: z.string(),
   heroMetricValue: z.string(),
-  heroAsideTitle: z.string(),
-  heroAsideBody: z.string(),
+  heroAsideTitle: z.string().optional(),
+  heroAsideBody: z.string().optional(),
   primaryCtaLabel: z.string(),
   primaryCtaHref: z.string(),
   secondaryCtaLabel: z.string().optional(),
@@ -148,7 +185,22 @@ const HomeCopySchema = z.object({
   teasers: z.object({
     flagship: HomeTeaserSchema,
     stack: HomeTeaserSchema
-  })
+  }),
+  whatBuildSection: z.object({
+    kicker: z.string(),
+    title: z.string(),
+    description: z.string().optional()
+  }).optional(),
+  currentFocusSection: z.object({
+    kicker: z.string(),
+    title: z.string(),
+    items: z.array(CurrentFocusItemSchema)
+  }).optional(),
+  liveWorkSection: z.object({
+    kicker: z.string(),
+    title: z.string(),
+    description: z.string().optional()
+  }).optional()
 });
 
 const SectionCopySchema = z.object({

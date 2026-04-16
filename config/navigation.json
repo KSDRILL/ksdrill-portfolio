@@ -9,16 +9,8 @@
       "group": "primary"
     },
     {
-      "id": "methodology",
-      "label": "Methodology",
-      "icon": "bookOpen",
-      "href": "/methodology",
-      "roles": ["public"],
-      "group": "primary"
-    },
-    {
       "id": "flagship",
-      "label": "Flagship",
+      "label": "Projects",
       "icon": "layers",
       "href": "/flagship",
       "roles": ["public"],
@@ -26,9 +18,17 @@
     },
     {
       "id": "tech-stack",
-      "label": "Tech Stack",
+      "label": "Stack",
       "icon": "cpu",
       "href": "/tech-stack",
+      "roles": ["public"],
+      "group": "primary"
+    },
+    {
+      "id": "methodology",
+      "label": "Philosophy",
+      "icon": "bookOpen",
+      "href": "/methodology",
       "roles": ["public"],
       "group": "primary"
     },

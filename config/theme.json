@@ -10,21 +10,19 @@
     "secondary": "#9CA3AF"
   },
   "home": {
-    "heroHeadline": "Production-grade platforms from architecture-first MVPs.",
-    "heroSubline": "Sequential delivery, honest contracts, and systems you can inspect — not slide-deck promises.",
+    "heroHeadline": "Building production-grade digital systems across fintech, healthcare, enterprise, and AI — designed to scale, deployed to ship.",
+    "heroSubline": "Next.js · Angular · FastAPI · Python · PostgreSQL",
     "heroBadgeLabel": "Primary surface · Engineering narrative",
     "heroBadgeLucide": "Sparkles",
-    "heroKicker": "ENGINEERING_PORTFOLIO / v1.MVP",
+    "heroKicker": "ksdrill-portfolio / v1.MVP",
     "heroMetricLabel": "BUILD_MODE",
     "heroMetricValue": "SEQUENTIAL · PRODUCTION_GRADE",
-    "heroAsideTitle": "Operating model",
-    "heroAsideBody": "Design and documentation before code. One flagship system at a time — architecture, contracts, and validation gates that match how serious platforms ship.",
-    "primaryCtaLabel": "View flagship systems",
+    "primaryCtaLabel": "View My Work",
     "primaryCtaHref": "/flagship",
-    "secondaryCtaLabel": "How I build",
-    "secondaryCtaHref": "/methodology",
-    "tertiaryCtaLabel": "Profile",
-    "tertiaryCtaHref": "#profile",
+    "secondaryCtaLabel": "Let's Talk",
+    "secondaryCtaHref": "/contact",
+    "tertiaryCtaLabel": "Methodology",
+    "tertiaryCtaHref": "/methodology",
     "trustStrip": {
       "items": [
         {
@@ -33,7 +31,7 @@
         },
         {
           "label": "Core surface",
-          "value": "Next.js · TypeScript · Tailwind"
+          "value": "Next.js · Angular · TypeScript"
         },
         {
           "label": "Blueprint",
@@ -42,7 +40,7 @@
         },
         {
           "label": "Open to",
-          "value": "Engineering roles · selective engagements"
+          "value": "Engineering roles · contract · remote"
         }
       ]
     },
@@ -55,16 +53,16 @@
       "result": "Clearer application paths and a backbone ready for FastAPI/LangChain matching — architecture diagram and stack on the case study page.",
       "ctaLabel": "Open case study + diagram"
     },
-    "heroScrollHint": "DETAIL_FIRST · HOME",
-    "heroFooterNote": "Premium depth without noise: one accent, disciplined grids, and motion that respects reduction settings — calibrated for hiring managers who have seen a thousand templates.",
+    "heroScrollHint": "SCROLL · EVIDENCE_BELOW",
+    "heroFooterNote": "This portfolio is the primary surface. The Angular build demonstrates fluency in Angular as a secondary framework.",
     "narrative": {
       "kicker": "02 // THESIS",
-      "title": "What this portfolio optimizes for",
+      "title": "What this portfolio is about",
       "lucideIcon": "BookOpen",
       "paragraphs": [
-        "This site is not a trophy wall of logos. It is a narrow, high-signal lens: how systems are framed before code, how contracts stay honest when backends change, and how delivery stays sequential when scope tries to explode.",
-        "Flagship work and toolchain depth live on their own routes so you can skim the story here, then open the evidence where it belongs — case studies with problem, architecture, and stack; stack grouped by layer instead of a chaotic badge grid.",
-        "If that matches how your team builds, the next step is a conversation, not a keyword match."
+        "I design and build practical digital systems that solve real-world challenges. Before writing code I complete full platform architecture, user flows, system modules, database structures, and interface designs.",
+        "Development happens sequentially — one system at a time — ensuring stability and deep technical understanding. Every system uses the same backbone: Next.js surface, service layer, Prisma, PostgreSQL, and optional Python AI where intelligence is justified.",
+        "This portfolio is the primary surface. An Angular build demonstrates fluency in Angular as a secondary framework."
       ]
     },
     "teasersSection": {
@@ -89,6 +87,34 @@
         "href": "/tech-stack",
         "lucideIcon": "Code2"
       }
+    },
+    "whatBuildSection": {
+      "kicker": "03 // WHAT_I_BUILD",
+      "title": "What I Build",
+      "description": "Scalable full-stack systems integrated with AI — across every industry."
+    },
+    "currentFocusSection": {
+      "kicker": "04 // CURRENT_FOCUS",
+      "title": "Current Focus — Q2 2026",
+      "items": [
+        {
+          "title": "Full-Stack Engineering",
+          "description": "Next.js, Angular, FastAPI, PostgreSQL — building systems that handle real production load."
+        },
+        {
+          "title": "AI Integration",
+          "description": "LangChain, RAG pipelines, semantic search, and AI agents embedded in real products."
+        },
+        {
+          "title": "Cloud Architecture",
+          "description": "Docker, AWS, CI/CD, and scalable deployment pipelines built for reliability."
+        }
+      ]
+    },
+    "liveWorkSection": {
+      "kicker": "05 // LIVE_WORK",
+      "title": "Live Work",
+      "description": "Source code and deployed projects."
     }
   },
   "sections": {
@@ -114,9 +140,9 @@
     },
     "contact": {
       "kicker": "06 // CONTACT",
-      "title": "Let’s build something serious",
-      "description": "Validated form below, or open a channel directly — each opens in its native surface so threads stay fast and searchable.",
-      "body": "Open to software engineering roles and selective platform engagements.",
+      "title": "Ready to build something?",
+      "description": "Open to full-time, contract, and remote opportunities.",
+      "body": "Validated form below, or open a channel directly — each opens in its native surface so threads stay fast and searchable.",
       "subbody": "Email is fastest for technical threads; LinkedIn for formal introductions."
     }
   },

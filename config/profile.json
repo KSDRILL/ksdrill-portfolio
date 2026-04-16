@@ -1,37 +1,46 @@
 {
   "name": "Maluleke Kurhula Success",
   "portraitSrc": "/images/portrait.png",
-  "portraitAlt": "Maluleke Kurhula Success — portrait",
+  "portraitAlt": "Maluleke Kurhula Success — Software Engineer & AI Systems Architect",
   "titles": ["Software Engineer", "AI Systems Architect"],
-  "summary": "I design and build scalable, production-grade platforms across SaaS, fintech, AI, and enterprise — using a locked, universal MVP blueprint that prioritizes architecture, documentation, and sequential delivery.",
+  "tagline": "Building production-grade digital systems across fintech, healthcare, enterprise, and AI — designed to scale, deployed to ship.",
+  "summary": "Architecture-first engineer building large-scale platforms through owned studios — not slide decks. I design and build scalable, production-grade platforms across SaaS, fintech, AI, and enterprise — using a locked, universal MVP blueprint that prioritizes architecture, documentation, and sequential delivery.",
+  "education": {
+    "degree": "BSc Computer Science & Mathematics",
+    "institution": "North-West University",
+    "status": "Final Year"
+  },
+  "location": "Based in South Africa · Available for remote work globally",
+  "openToWork": true,
+  "openToWorkLabel": "Open to work",
   "companies": [
     {
       "name": "KSDRILL SA",
       "role": "Founder",
       "periodLabel": "Ongoing",
-      "description": "Technology studio demonstrating full-stack engineering, AI integration, and production deployment across multiple industries."
+      "description": "Technology studio demonstrating full-stack engineering, AI integration, and production deployment across multiple industries. Focus areas: AI systems, fintech, SaaS, enterprise automation."
     },
     {
       "name": "GrowthCore Solutions",
       "role": "Co-founder",
       "periodLabel": "Ongoing",
-      "description": "Digital growth agency combining web development, marketing, and analytics to drive measurable growth for clients."
+      "description": "Digital growth agency (with Ngoneni Mponisi Forever) combining web development, marketing, customer acquisition, and analytics to drive measurable growth for clients."
     }
   ],
   "socialLinks": [
+    {
+      "type": "github",
+      "label": "GitHub",
+      "url": "https://github.com/MALULEKE-KS"
+    },
     {
       "type": "linkedin",
       "label": "LinkedIn",
       "url": "https://za.linkedin.com/in/kurhula-success-maluleke-32153231a"
     },
     {
-      "type": "github",
-      "label": "GitHub",
-      "url": "https://github.com/KSDRILL"
-    },
-    {
       "type": "email",
-      "label": "Email",
+      "label": "Email Me",
       "url": "mailto:kurhula04s@gmail.com"
     },
     {
@@ -39,6 +48,75 @@
       "label": "WhatsApp",
       "url": "https://wa.me/27640708649"
     }
+  ],
+  "quickLinks": [
+    {
+      "label": "View My Work",
+      "href": "/flagship",
+      "variant": "primary"
+    },
+    {
+      "label": "Let's Talk",
+      "href": "/contact",
+      "variant": "secondary"
+    }
+  ],
+  "atAGlance": [
+    "Building production-grade full-stack systems with Next.js, Angular, and FastAPI",
+    "Integrating AI into real products — RAG pipelines, LangChain, embeddings, and agents",
+    "Cloud-native deployment with Docker, AWS, and modern CI/CD pipelines",
+    "BSc Computer Science & Mathematics — North-West University, Final Year"
+  ],
+  "industries": [
+    "Fintech",
+    "Healthcare",
+    "Enterprise SaaS",
+    "EdTech",
+    "GovTech",
+    "E-commerce"
+  ],
+  "whatICanBuild": "Scalable full-stack systems integrated with AI — across every industry.",
+  "currentFocus": {
+    "quarter": "Q2 2026",
+    "areas": [
+      {
+        "title": "Full-Stack Engineering",
+        "description": "Next.js, Angular, FastAPI, PostgreSQL — building systems that handle real production load."
+      },
+      {
+        "title": "AI Integration",
+        "description": "LangChain, RAG pipelines, semantic search, and AI agents embedded in real products."
+      },
+      {
+        "title": "Cloud Architecture",
+        "description": "Docker, AWS, CI/CD, and scalable deployment pipelines built for reliability."
+      }
+    ]
+  },
+  "liveWork": [
+    {
+      "name": "Angular Portfolio",
+      "description": "This site — Angular portfolio demonstrating fluency in Angular",
+      "url": "https://my-angular-portfolio-eight.vercel.app/",
+      "type": "external"
+    },
+    {
+      "name": "Next.js Portfolio",
+      "description": "my-nextjs-portfolio.vercel.app",
+      "url": "https://my-nextjs-portfolio.vercel.app/",
+      "type": "external"
+    },
+    {
+      "name": "Next.js Portfolio Source",
+      "description": "github.com/MALULEKE-KS/my-nextjs-portfolio",
+      "url": "https://github.com/MALULEKE-KS/my-nextjs-portfolio",
+      "type": "external"
+    },
+    {
+      "name": "GitHub Profile",
+      "description": "github.com/MALULEKE-KS",
+      "url": "https://github.com/MALULEKE-KS",
+      "type": "external"
+    }
   ]
 }
-
