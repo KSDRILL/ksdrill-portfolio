@@ -1,22 +1,22 @@
 {
-  "accentColor": "#2563EB",
+  "accentColor": "#C8102E",
   "background": {
-    "base": "#020617",
-    "muted": "#020617",
-    "card": "#020617"
+    "base": "#080808",
+    "muted": "#080808",
+    "card": "#080808"
   },
   "text": {
-    "primary": "#F9FAFB",
-    "secondary": "#9CA3AF"
+    "primary": "#F4EFE6",
+    "secondary": "#8A8278"
   },
   "home": {
-    "heroHeadline": "Building production-grade digital systems across fintech, healthcare, enterprise, and AI \u2014 designed to scale, deployed to ship.",
-    "heroSubline": "Next.js \u00b7 Angular \u00b7 FastAPI \u00b7 Python \u00b7 PostgreSQL",
-    "heroBadgeLabel": "Primary surface \u00b7 Engineering narrative",
+    "heroHeadline": "Building digital systems that ship and scale.",
+    "heroSubline": "Full-stack engineering + AI integration \u2014 from architecture to production.",
+    "heroBadgeLabel": "Primary surface \u00b7 Engineering portfolio",
     "heroBadgeLucide": "Sparkles",
     "heroKicker": "maluleke-kurhula-portfolio / v1.MVP",
     "heroMetricLabel": "BUILD_MODE",
-    "heroMetricValue": "SEQUENTIAL \u00b7 PRODUCTION_GRADE",
+    "heroMetricValue": "ARCHITECTURE_FIRST \u00b7 PRODUCTION_GRADE",
     "primaryCtaLabel": "View My Work",
     "primaryCtaHref": "/flagship",
     "secondaryCtaLabel": "Let's Talk",
@@ -50,25 +50,24 @@
       "systemId": "fundslink-academy",
       "problem": "342,000+ students excluded yearly due to fragmented bursary applications, duplicated processes, and funding scattered across disconnected portals.",
       "solution": "A single digital front door for funding with structured eligibility capture, centralized applications, and a planned AI-assisted matching layer.",
-      "result": "Clearer application paths and a backbone ready for FastAPI/LangChain matching \u2014 architecture diagram and stack on the case study page.",
-      "ctaLabel": "Open case study + diagram"
+      "ctaLabel": "Open case study + diagram",
+      "result": "A production-ready backbone with clear architecture, ready for FastAPI/LangChain AI matching."
     },
     "heroScrollHint": "SCROLL \u00b7 EVIDENCE_BELOW",
-    "heroFooterNote": "This portfolio is the primary surface. The Angular build demonstrates fluency in Angular as a secondary framework.",
+    "heroFooterNote": "This portfolio is the primary surface \u2014 a system built to demonstrate how I build.",
     "narrative": {
       "kicker": "02 // THESIS",
       "title": "What this portfolio is about",
       "lucideIcon": "BookOpen",
       "paragraphs": [
         "I design and build practical digital systems that solve real-world challenges. Before writing code I complete full platform architecture, user flows, system modules, database structures, and interface designs.",
-        "Development happens sequentially \u2014 one system at a time \u2014 ensuring stability and deep technical understanding. Every system uses the same backbone: Next.js surface, service layer, Prisma, PostgreSQL, and optional Python AI where intelligence is justified.",
-        "This portfolio is the primary surface. An Angular build demonstrates fluency in Angular as a secondary framework."
+        "Development happens sequentially \u2014 one system at a time \u2014 ensuring stability and deep technical understanding. Every system uses the same backbone: Next.js surface, service layer, Prisma, PostgreSQL, and optional Python AI where intelligence is justified."
       ]
     },
     "teasersSection": {
       "kicker": "05 // ROUTES",
       "title": "Where the evidence lives",
-      "description": "Home stays narrative. Catalogs and layer breakdowns stay on dedicated pages so nothing competes with the story."
+      "description": "Home stays narrative. Catalogs and layer breakdowns stay on dedicated pages."
     },
     "teasers": {
       "flagship": {
@@ -144,7 +143,7 @@
       "kicker": "06 // CONTACT",
       "title": "Ready to build something?",
       "description": "Open to full-time, contract, and remote opportunities.",
-      "body": "Validated form below, or open a channel directly \u2014 each opens in its native surface so threads stay fast and searchable.",
+      "body": "Open a channel directly \u2014 each opens in its native surface so threads stay fast and searchable.",
       "subbody": "Email is fastest for technical threads; LinkedIn for formal introductions."
     }
   },
@@ -154,12 +153,12 @@
       "mobile": "/images/hero-mobile.svg",
       "fallback": "/images/hero-fallback.svg"
     },
-    "backgroundAlt": "Abstract technology pattern representing system intelligence",
+    "backgroundAlt": "Deep obsidian geometric pattern",
     "backgroundSize": "cover",
     "backgroundPosition": "center",
     "overlay": {
-      "color": "#020617",
-      "opacity": 0.72,
+      "color": "#080808",
+      "opacity": 0.75,
       "blur": false
     }
   },
@@ -169,8 +168,8 @@
     "backgroundSize": "cover",
     "backgroundPosition": "bottom right",
     "overlay": {
-      "color": "#020617",
-      "opacity": 0.8
+      "color": "#080808",
+      "opacity": 0.85
     }
   }
 }
