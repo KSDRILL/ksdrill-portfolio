@@ -1,67 +1,42 @@
-import "./globals.css";
-import "./page.css";
-import "./teasers.css";
-import type { ReactNode } from "react";
 import type { Metadata } from "next";
+import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import Providers from "@/app/providers";
-import BackToTop from "@/components/ui/BackToTop";
-import { fontMono, fontSans } from "@/app/fonts";
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_APP_URL ?? "https://ksdrill-portfolio.vercel.app";
-
-const defaultTitle = "Maluleke Kurhula Success – Engineering Portfolio";
-const defaultDescription =
-  "Software Engineer and AI Integrator building production-grade digital systems across fintech, healthcare, enterprise, and AI.";
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://ksdrill-portfolio.vercel.app";
+const name = "Maluleke Kurhula Success";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: {
-    default: defaultTitle,
-    template: "%s · Portfolio"
-  },
-  description: defaultDescription,
-  icons: {
-    icon: "/favicon.svg",
-    apple: "/favicon.svg"
-  },
+  title: { default: `${name} — Engineering Portfolio`, template: "%s" },
+  description:
+    "Software Engineer and AI Integrator building production-grade platforms across fintech, healthcare, enterprise, and AI.",
   openGraph: {
     type: "website",
     locale: "en_ZA",
-    siteName: defaultTitle,
-    title: defaultTitle,
-    description: defaultDescription,
+    siteName: name,
+    title: `${name} — Engineering Portfolio`,
+    description: "Production-grade platforms built with architecture-first precision.",
     url: siteUrl,
-    images: [
-      {
-        url: "/images/og-image_1.png",
-        width: 1200,
-        height: 800,
-        alt: "Maluleke Kurhula Success – Engineering Portfolio"
-      }
-    ]
+    images: [{ url: "/images/og-image_1.png", width: 1200, height: 630 }]
   },
   twitter: {
     card: "summary_large_image",
-    title: defaultTitle,
-    description: defaultDescription
+    title: `${name} — Engineering Portfolio`,
+    description: "Production-grade platforms built with architecture-first precision."
   }
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${fontSans.variable} ${fontMono.variable}`}>
-      <body className="bg-[#FAF8F5] text-[#1A1814] antialiased">
-        <Providers>
-          <div className="flex min-h-screen flex-col">
-            <Header />
-            {children}
-            <Footer />
-            <BackToTop />
-          </div>
-        </Providers>
+    <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      </head>
+      <body className="bg-obsm-warm text-obsm-text-primary antialiased">
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

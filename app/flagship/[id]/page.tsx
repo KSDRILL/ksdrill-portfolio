@@ -72,14 +72,14 @@ export default async function FlagshipDetailPage({ params }: Params) {
           >
             Home
           </Link>
-          <ChevronRight className="h-3.5 w-3.5 text-slate-600" aria-hidden />
+          <ChevronRight className="h-3.5 w-3.5 text-obsm-muted" aria-hidden />
           <Link
             href="/flagship"
             className="hover:text-[#6B645A] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C8102E]-500/60"
           >
             Flagship
           </Link>
-          <ChevronRight className="h-3.5 w-3.5 text-slate-600" aria-hidden />
+          <ChevronRight className="h-3.5 w-3.5 text-obsm-muted" aria-hidden />
           <span className="font-mono text-[#6B645A]">{system.id}</span>
         </nav>
 
@@ -110,7 +110,7 @@ export default async function FlagshipDetailPage({ params }: Params) {
                 </span>
               </div>
             </div>
-            <div className="shrink-0 font-mono text-[10px] leading-relaxed text-slate-600 md:text-right">
+            <div className="shrink-0 font-mono text-[10px] leading-relaxed text-obsm-muted md:text-right">
               <div>DOC_ID · {system.id.toUpperCase().replace(/-/g, "_")}</div>
               <div>RTE · PRODUCTION_POSTURE</div>
             </div>
@@ -215,7 +215,7 @@ export default async function FlagshipDetailPage({ params }: Params) {
                   href={system.liveUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg border border-blue-500/40 bg-[#C8102E]/10 px-4 py-2 text-sm font-semibold text-[#C8102E] transition-colors hover:border-blue-400/60 hover:text-[#C8102E]"
+                  className="inline-flex items-center gap-2 rounded-lg border border-obsm-accent/40 bg-[#C8102E]/10 px-4 py-2 text-sm font-semibold text-[#C8102E] transition-colors hover:border-blue-400/60 hover:text-[#C8102E]"
                 >
                   <ExternalLink className="h-4 w-4" aria-hidden />
                   Live Demo

@@ -75,7 +75,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-4 text-center">
-          <p className="text-xs text-slate-600">
+          <p className="text-xs text-obsm-muted">
             Built with Next.js · Tailwind CSS
           </p>
         </div>

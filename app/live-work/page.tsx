@@ -19,7 +19,7 @@ export default async function LiveWorkPage() {
       <div className="relative z-[1] space-y-10">
         <nav className="flex items-center gap-2 text-xs text-[#1A1814]0" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-[#6B645A] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C8102E]-500/60">Home</Link>
-          <ChevronRight className="h-3.5 w-3.5 text-slate-600" aria-hidden />
+          <ChevronRight className="h-3.5 w-3.5 text-obsm-muted" aria-hidden />
           <span className="font-mono text-[#6B645A]">Live Work</span>
         </nav>
 

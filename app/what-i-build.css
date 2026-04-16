@@ -10,7 +10,7 @@
   transform: translateX(-50%);
   width: 600px;
   height: 300px;
-  background: radial-gradient(ellipse at center top, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center top, rgba(200,16,46, 0.08) 0%, transparent 70%);
   pointer-events: none;
   filter: blur(20px);
 }
@@ -70,7 +70,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.12) 0%, transparent 65%);
+  background: radial-gradient(circle at 50% 0%, rgba(200,16,46, 0.12) 0%, transparent 65%);
   opacity: 0;
   transition: opacity 0.22s ease;
 }
@@ -87,7 +87,7 @@
   transform: translateX(-50%);
   width: 60%;
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(37, 99, 235, 0.5) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(200,16,46, 0.5) 50%, transparent 100%);
   opacity: 0;
   transition: opacity 0.22s ease;
 }
@@ -97,9 +97,9 @@
 }
 
 .industry-card:hover {
-  border-color: rgba(37, 99, 235, 0.4);
+  border-color: rgba(200,16,46, 0.4);
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px -8px rgba(37, 99, 235, 0.15), 0 0 0 1px rgba(37, 99, 235, 0.08);
+  box-shadow: 0 12px 32px -8px rgba(200,16,46, 0.15), 0 0 0 1px rgba(200,16,46, 0.08);
 }
 
 .industry-icon-wrap {
@@ -115,13 +115,13 @@
   background: rgba(255, 252, 248, 0.8);
   margin-bottom: 1rem;
   transition: all 0.22s ease;
-  box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+  box-shadow: 0 0 0 0 rgba(200,16,46, 0);
 }
 
 .industry-card:hover .industry-icon-wrap {
-  border-color: rgba(37, 99, 235, 0.5);
-  background: rgba(37, 99, 235, 0.12);
-  box-shadow: 0 0 20px -4px rgba(37, 99, 235, 0.25);
+  border-color: rgba(200,16,46, 0.5);
+  background: rgba(200,16,46, 0.12);
+  box-shadow: 0 0 20px -4px rgba(200,16,46, 0.25);
 }
 
 .industry-icon-wrap svg {
@@ -331,15 +331,15 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(37, 99, 235, 0.5) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(200,16,46, 0.5) 50%, transparent 100%);
   opacity: 0;
   transition: opacity 0.2s ease;
 }
 
 .cap-teaser-card:hover {
-  border-color: rgba(37, 99, 235, 0.35);
+  border-color: rgba(200,16,46, 0.35);
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px -8px rgba(37, 99, 235, 0.15);
+  box-shadow: 0 8px 32px -8px rgba(200,16,46, 0.15);
 }
 
 .cap-teaser-card:hover::before {
@@ -388,12 +388,12 @@
   gap: 6px;
   font-size: 0.78rem;
   font-weight: 600;
-  color: #3B82F6;
+  color: #C8102E;
   transition: color 0.15s ease;
 }
 
 .cap-teaser-card:hover .cap-teaser-link {
-  color: #60A5FA;
+  color: #C8102E;
 }
 
 .cap-teaser-arrow {

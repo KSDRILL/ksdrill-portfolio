@@ -31,7 +31,7 @@ export default function MethodologyPage() {
           >
             Home
           </Link>
-          <ChevronRight className="h-3.5 w-3.5 text-slate-600" aria-hidden />
+          <ChevronRight className="h-3.5 w-3.5 text-obsm-muted" aria-hidden />
           <span className="font-mono text-[#6B645A]">methodology</span>
         </nav>
 

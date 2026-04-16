@@ -61,7 +61,7 @@ export default async function FeaturedFlagshipSection() {
 
             <div className="ffm-system-meta">
               <span className="ffm-phase-badge">
-                <span style={{ width: 5, height: 5, borderRadius: "50%", background: "#3B82F6", display: "inline-block", boxShadow: "0 0 6px rgba(59,130,246,0.8)" }} aria-hidden />
+                <span style={{ width: 5, height: 5, borderRadius: "50%", background: "#C8102E", display: "inline-block", boxShadow: "0 0 6px rgba(59,130,246,0.8)" }} aria-hidden />
                 {featured?.phase ?? "Phase 1 — Active Development"}
               </span>
               <span className="ffm-status-badge">

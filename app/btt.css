@@ -13,25 +13,25 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid rgba(37, 99, 235, 0.4);
+  border: 1px solid rgba(200,16,46, 0.4);
   background: rgba(255, 252, 248, 0.95);
   backdrop-filter: blur(8px);
-  color: #60A5FA;
-  box-shadow: 0 0 20px -6px rgba(37, 99, 235, 0.5);
+  color: #C8102E;
+  box-shadow: 0 0 20px -6px rgba(200,16,46, 0.5);
   transition: all 0.2s ease-out;
 }
 
 .btt-btn:hover {
   background: rgba(255, 252, 248, 0.96);
-  border-color: rgba(37, 99, 235, 0.6);
-  color: #93C5FD;
+  border-color: rgba(200,16,46, 0.6);
+  color: #C8102E;
   transform: translateY(-2px);
-  box-shadow: 0 0 28px -6px rgba(37, 99, 235, 0.65);
+  box-shadow: 0 0 28px -6px rgba(200,16,46, 0.65);
 }
 
 .btt-btn:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4), 0 0 20px -6px rgba(37, 99, 235, 0.5);
+  box-shadow: 0 0 0 3px rgba(200,16,46, 0.4), 0 0 20px -6px rgba(200,16,46, 0.5);
 }
 
 .btt-icon {

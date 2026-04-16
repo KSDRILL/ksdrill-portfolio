@@ -29,7 +29,7 @@ export default function ContactPage() {
           >
             Home
           </Link>
-          <span className="text-slate-600" aria-hidden>
+          <span className="text-obsm-muted" aria-hidden>
             /
           </span>
           <span className="font-mono text-[#6B645A]">contact</span>

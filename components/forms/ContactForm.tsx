@@ -16,7 +16,7 @@ type ApiErrorBody = {
 const labelCls =
   "mb-1.5 block font-mono text-[10px] uppercase tracking-[0.16em] text-[#1A1814]0";
 const inputCls =
-  "w-full rounded-lg border border-[#E4DFD7]/90 bg-[#FAF8F5]/60 px-3 py-2.5 text-sm text-[#2D2923] placeholder:text-slate-600 focus:border-blue-500/60 focus:outline-none focus:ring-2 focus:ring-blue-500/30 min-h-[44px]";
+  "w-full rounded-lg border border-[#E4DFD7]/90 bg-[#FAF8F5]/60 px-3 py-2.5 text-sm text-[#2D2923] placeholder:text-obsm-muted focus:border-obsm-accent/60 focus:outline-none focus:ring-2 focus:ring-blue-500/30 min-h-[44px]";
 const errCls = "mt-1.5 text-xs text-red-600";
 
 export default function ContactForm() {

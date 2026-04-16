@@ -99,7 +99,7 @@ export default async function FlagshipCatalog() {
                       href={system.liveUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-1.5 rounded-lg border border-[#C8102E]/30 bg-[#C8102E]/10 px-3 py-1.5 font-mono text-[10px] text-[#C8102E] transition-colors hover:border-blue-400/50 hover:text-[#C8102E]"
+                      className="inline-flex items-center gap-1.5 rounded-lg border border-[#C8102E]/30 bg-[#C8102E]/10 px-3 py-1.5 font-mono text-[10px] text-[#C8102E] transition-colors hover:border-obsm-accent/50 hover:text-[#C8102E]"
                     >
                       <ExternalLink className="h-3 w-3" aria-hidden />
                       Live Demo
