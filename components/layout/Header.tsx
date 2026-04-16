@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, Cpu, Home, Layers, Mail, Menu, X } from "lucide-react";
+import { BookOpen, Briefcase, Cpu, GraduationCap, Home, Layers, Mail, Menu, Scale, X } from "lucide-react";
 import { useState } from "react";
 import "@/app/header.css";
 import { loadNavigationConfig, loadProfile } from "@/lib/config-loader";
@@ -13,6 +13,9 @@ const navIconMap = {
   layers: Layers,
   cpu: Cpu,
   mail: Mail,
+  briefcase: Briefcase,
+  graduationCap: GraduationCap,
+  scale: Scale
 } as const;
 
 export default function Header() {

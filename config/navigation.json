@@ -9,28 +9,36 @@
       "group": "primary"
     },
     {
-      "id": "flagship",
-      "label": "Projects",
+      "id": "experience",
+      "label": "Experience",
+      "icon": "briefcase",
+      "href": "/experience",
+      "roles": ["public"],
+      "group": "primary"
+    },
+    {
+      "id": "capabilities",
+      "label": "Capabilities",
       "icon": "layers",
+      "href": "/capabilities",
+      "roles": ["public"],
+      "group": "primary"
+    },
+    {
+      "id": "flagship",
+      "label": "Flagship",
+      "icon": "cpu",
       "href": "/flagship",
       "roles": ["public"],
       "group": "primary"
     },
     {
-      "id": "tech-stack",
-      "label": "Stack",
-      "icon": "cpu",
-      "href": "/tech-stack",
+      "id": "live-work",
+      "label": "Live Work",
+      "icon": "externalLink",
+      "href": "/live-work",
       "roles": ["public"],
-      "group": "primary"
-    },
-    {
-      "id": "methodology",
-      "label": "Philosophy",
-      "icon": "bookOpen",
-      "href": "/methodology",
-      "roles": ["public"],
-      "group": "primary"
+      "group": "secondary"
     },
     {
       "id": "contact",
