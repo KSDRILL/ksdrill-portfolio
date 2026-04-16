@@ -32,6 +32,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: defaultTitle,
     description: defaultDescription
+  },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
   }
 };
 

@@ -6,6 +6,14 @@ export const SocialLinkSchema = z.object({
   url: z.string()
 });
 
+export const WorkExperienceItemSchema = z.object({
+  company: z.string(),
+  role: z.string(),
+  period: z.string(),
+  description: z.string(),
+  highlights: z.array(z.string())
+});
+
 export const ProfileSchema = z.object({
   name: z.string(),
   portraitSrc: z.string().optional(),
@@ -18,9 +26,9 @@ export const ProfileSchema = z.object({
     institution: z.string(),
     status: z.string()
   }).optional(),
-  location: z.string(),
+  location: z.string().optional(),
   openToWork: z.boolean().default(false),
-  openToWorkLabel: z.string().default("Open to work"),
+  openToWorkLabel: z.string().optional(),
   organizations: z.array(
     z.object({
       name: z.string(),
@@ -28,13 +36,14 @@ export const ProfileSchema = z.object({
       description: z.string(),
       periodLabel: z.string().optional()
     })
-  ),
+  ).optional(),
+  workExperience: z.array(WorkExperienceItemSchema).optional(),
   socialLinks: z.array(SocialLinkSchema),
   quickLinks: z.array(
     z.object({
       label: z.string(),
       href: z.string(),
-      variant: z.enum(["primary", "secondary"]).default("primary")
+      variant: z.enum(["primary", "secondary"]).optional()
     })
   ).optional(),
   atAGlance: z.array(z.string()).optional(),
@@ -47,12 +56,14 @@ export const ProfileSchema = z.object({
       description: z.string()
     }))
   }).optional(),
-  liveWork: z.array(z.object({
-    name: z.string(),
-    description: z.string(),
-    url: z.string(),
-    type: z.enum(["external", "internal"]).default("external")
-  })).optional()
+  liveWork: z.array(
+    z.object({
+      name: z.string(),
+      description: z.string(),
+      url: z.string(),
+      type: z.enum(["external", "internal"]).optional()
+    })
+  ).optional()
 });
 
 export const FlagshipSystemSchema = z.object({
@@ -62,7 +73,7 @@ export const FlagshipSystemSchema = z.object({
   badgeColor: z.string(),
   status: z.enum(["active-development", "design-complete", "planned"]),
   shortDescription: z.string(),
-  longDescription: z.string(),
+  longDescription: z.string().optional(),
   problem: z.string(),
   solution: z.string(),
   architecture: z.string(),
@@ -75,7 +86,8 @@ export const FlagshipSystemSchema = z.object({
       label: z.string(),
       url: z.string().url()
     })
-  )
+  ).optional(),
+  liveUrl: z.string().optional()
 });
 
 export const FlagshipSystemsConfigSchema = z.object({
@@ -124,7 +136,6 @@ const TrustStripItemSchema = z.object({
   value: z.string(),
   href: z.string().optional()
 });
-
 const HomeTeaserSchema = z.object({
   kicker: z.string(),
   title: z.string(),
@@ -144,11 +155,6 @@ const FeaturedFlagshipHomeSchema = z.object({
   ctaLabel: z.string()
 });
 
-const CurrentFocusItemSchema = z.object({
-  title: z.string(),
-  description: z.string()
-});
-
 const HomeCopySchema = z.object({
   heroHeadline: z.string(),
   heroSubline: z.string(),
@@ -157,8 +163,8 @@ const HomeCopySchema = z.object({
   heroKicker: z.string(),
   heroMetricLabel: z.string(),
   heroMetricValue: z.string(),
-  heroAsideTitle: z.string().optional(),
-  heroAsideBody: z.string().optional(),
+  heroAsideTitle: z.string(),
+  heroAsideBody: z.string(),
   primaryCtaLabel: z.string(),
   primaryCtaHref: z.string(),
   secondaryCtaLabel: z.string().optional(),
@@ -186,20 +192,13 @@ const HomeCopySchema = z.object({
     flagship: HomeTeaserSchema,
     stack: HomeTeaserSchema
   }),
-  whatBuildSection: z.object({
-    kicker: z.string(),
-    title: z.string(),
-    description: z.string().optional()
-  }).optional(),
   currentFocusSection: z.object({
     kicker: z.string(),
     title: z.string(),
-    items: z.array(CurrentFocusItemSchema)
-  }).optional(),
-  liveWorkSection: z.object({
-    kicker: z.string(),
-    title: z.string(),
-    description: z.string().optional()
+    items: z.array(z.object({
+      title: z.string(),
+      description: z.string()
+    }))
   }).optional()
 });
 
@@ -281,6 +280,7 @@ export type NavigationConfig = z.infer<typeof NavigationConfigSchema>;
 export type ThemeConfig = z.infer<typeof ThemeConfigSchema>;
 export type FeaturesConfig = z.infer<typeof FeaturesConfigSchema>;
 export type ApiConfig = z.infer<typeof ApiConfigSchema>;
+export type WorkExperienceItem = z.infer<typeof WorkExperienceItemSchema>;
 
 export const MethodologySectionSchema = z.object({
   id: z.string(),

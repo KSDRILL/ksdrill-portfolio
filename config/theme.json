@@ -10,13 +10,13 @@
     "secondary": "#9CA3AF"
   },
   "home": {
-    "heroHeadline": "Building production-grade digital systems across fintech, healthcare, enterprise, and AI — designed to scale, deployed to ship.",
-    "heroSubline": "Next.js · Angular · FastAPI · Python · PostgreSQL",
-    "heroBadgeLabel": "Primary surface · Engineering narrative",
+    "heroHeadline": "Building production-grade digital systems across fintech, healthcare, enterprise, and AI \u2014 designed to scale, deployed to ship.",
+    "heroSubline": "Next.js \u00b7 Angular \u00b7 FastAPI \u00b7 Python \u00b7 PostgreSQL",
+    "heroBadgeLabel": "Primary surface \u00b7 Engineering narrative",
     "heroBadgeLucide": "Sparkles",
     "heroKicker": "maluleke-kurhula-portfolio / v1.MVP",
     "heroMetricLabel": "BUILD_MODE",
-    "heroMetricValue": "SEQUENTIAL · PRODUCTION_GRADE",
+    "heroMetricValue": "SEQUENTIAL \u00b7 PRODUCTION_GRADE",
     "primaryCtaLabel": "View My Work",
     "primaryCtaHref": "/flagship",
     "secondaryCtaLabel": "Let's Talk",
@@ -31,7 +31,7 @@
         },
         {
           "label": "Core surface",
-          "value": "Next.js · Angular · TypeScript"
+          "value": "Next.js \u00b7 Angular \u00b7 TypeScript"
         },
         {
           "label": "Blueprint",
@@ -40,7 +40,7 @@
         },
         {
           "label": "Open to",
-          "value": "Engineering roles · contract · remote"
+          "value": "Engineering roles \u00b7 contract \u00b7 remote"
         }
       ]
     },
@@ -50,10 +50,10 @@
       "systemId": "fundslink-academy",
       "problem": "342,000+ students excluded yearly due to fragmented bursary applications, duplicated processes, and funding scattered across disconnected portals.",
       "solution": "A single digital front door for funding with structured eligibility capture, centralized applications, and a planned AI-assisted matching layer.",
-      "result": "Clearer application paths and a backbone ready for FastAPI/LangChain matching — architecture diagram and stack on the case study page.",
+      "result": "Clearer application paths and a backbone ready for FastAPI/LangChain matching \u2014 architecture diagram and stack on the case study page.",
       "ctaLabel": "Open case study + diagram"
     },
-    "heroScrollHint": "SCROLL · EVIDENCE_BELOW",
+    "heroScrollHint": "SCROLL \u00b7 EVIDENCE_BELOW",
     "heroFooterNote": "This portfolio is the primary surface. The Angular build demonstrates fluency in Angular as a secondary framework.",
     "narrative": {
       "kicker": "02 // THESIS",
@@ -61,7 +61,7 @@
       "lucideIcon": "BookOpen",
       "paragraphs": [
         "I design and build practical digital systems that solve real-world challenges. Before writing code I complete full platform architecture, user flows, system modules, database structures, and interface designs.",
-        "Development happens sequentially — one system at a time — ensuring stability and deep technical understanding. Every system uses the same backbone: Next.js surface, service layer, Prisma, PostgreSQL, and optional Python AI where intelligence is justified.",
+        "Development happens sequentially \u2014 one system at a time \u2014 ensuring stability and deep technical understanding. Every system uses the same backbone: Next.js surface, service layer, Prisma, PostgreSQL, and optional Python AI where intelligence is justified.",
         "This portfolio is the primary surface. An Angular build demonstrates fluency in Angular as a secondary framework."
       ]
     },
@@ -74,7 +74,7 @@
       "flagship": {
         "kicker": "FLAGSHIP_SYSTEMS",
         "title": "Systems catalog",
-        "body": "Four platforms in flight — each with problem framing, architecture, stack, and phase. Built like products, documented like serious engineering.",
+        "body": "Four platforms in flight \u2014 each with problem framing, architecture, stack, and phase. Built like products, documented like serious engineering.",
         "ctaLabel": "Browse case studies",
         "href": "/flagship",
         "lucideIcon": "Layers"
@@ -82,7 +82,7 @@
       "stack": {
         "kicker": "TECHNICAL_STACK",
         "title": "Toolchain by layer",
-        "body": "Frontend, API, data, AI, and delivery — the actual tools used to ship and operate platforms, organized for scanning by role.",
+        "body": "Frontend, API, data, AI, and delivery \u2014 the actual tools used to ship and operate platforms, organized for scanning by role.",
         "ctaLabel": "View full stack",
         "href": "/tech-stack",
         "lucideIcon": "Code2"
@@ -91,15 +91,15 @@
     "whatBuildSection": {
       "kicker": "03 // WHAT_I_BUILD",
       "title": "What I Build",
-      "description": "Scalable full-stack systems integrated with AI — across every industry."
+      "description": "Scalable full-stack systems integrated with AI \u2014 across every industry."
     },
     "currentFocusSection": {
       "kicker": "04 // CURRENT_FOCUS",
-      "title": "Current Focus — Q2 2026",
+      "title": "Current Focus \u2014 Q2 2026",
       "items": [
         {
           "title": "Full-Stack Engineering",
-          "description": "Next.js, Angular, FastAPI, PostgreSQL — building systems that handle real production load."
+          "description": "Next.js, Angular, FastAPI, PostgreSQL \u2014 building systems that handle real production load."
         },
         {
           "title": "AI Integration",
@@ -115,13 +115,15 @@
       "kicker": "05 // LIVE_WORK",
       "title": "Live Work",
       "description": "Source code and deployed projects."
-    }
+    },
+    "heroAsideTitle": "Operating model",
+    "heroAsideBody": "Design and documentation before code. One flagship system at a time \u2014 architecture, contracts, and validation gates that match how serious platforms ship."
   },
   "sections": {
     "profile": {
       "kicker": "01 // PROFILE",
       "title": "Who I am",
-      "description": "Architecture-first engineer building large-scale platforms through owned studios — not slide decks."
+      "description": "Architecture-first engineer building large-scale platforms through owned studios \u2014 not slide decks."
     },
     "capabilities": {
       "kicker": "04 // CAPABILITIES",
@@ -136,13 +138,13 @@
     "stack": {
       "kicker": "03 // TECHNICAL_STACK",
       "title": "Stack and tooling",
-      "description": "A coherent toolchain for shipping typed, observable, maintainable systems — not a badge collage."
+      "description": "A coherent toolchain for shipping typed, observable, maintainable systems \u2014 not a badge collage."
     },
     "contact": {
       "kicker": "06 // CONTACT",
       "title": "Ready to build something?",
       "description": "Open to full-time, contract, and remote opportunities.",
-      "body": "Validated form below, or open a channel directly — each opens in its native surface so threads stay fast and searchable.",
+      "body": "Validated form below, or open a channel directly \u2014 each opens in its native surface so threads stay fast and searchable.",
       "subbody": "Email is fastest for technical threads; LinkedIn for formal introductions."
     }
   },

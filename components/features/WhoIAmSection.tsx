@@ -10,6 +10,7 @@ export default async function WhoIAmSection() {
   const profile = await fetchProfile();
   const { sections } = loadThemeConfig();
   const copy = sections.profile;
+  const orgs = profile.organizations ?? [];
 
   return (
     <Section id="profile" className="space-y-8">
@@ -50,7 +51,7 @@ export default async function WhoIAmSection() {
             ORGS
           </p>
           <div className="space-y-3">
-            {profile.organizations.map((c) => (
+            {orgs.map((c) => (
               <Card
                 key={c.name}
                 className="p-4 transition-colors hover:border-slate-700"

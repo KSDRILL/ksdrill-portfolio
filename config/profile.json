@@ -18,13 +18,26 @@
       "name": "KSDRILL SA",
       "role": "Founder & Developer",
       "periodLabel": "Ongoing",
-      "description": "Technology studio demonstrating full-stack engineering, AI integration, and production deployment across multiple industries. Focus areas: AI systems, fintech, SaaS, enterprise automation."
+      "description": "Technology studio demonstrating full-stack engineering, AI integration, and production deployment across multiple industries."
     },
     {
       "name": "GrowthCore Solutions",
       "role": "Co-founder",
       "periodLabel": "Ongoing",
-      "description": "Digital growth agency (with Ngoneni Mponisi Forever) combining web development, marketing, customer acquisition, and analytics to drive measurable growth for clients."
+      "description": "Digital growth agency combining web development, marketing, customer acquisition, and analytics to drive measurable growth for clients."
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "Freelance",
+      "role": "Software Engineer",
+      "period": "2023 – Present",
+      "description": "Building full-stack web applications and AI-integrated systems for clients across fintech, healthcare, and enterprise domains. Delivered production-grade platforms using Next.js, Angular, FastAPI, and PostgreSQL.",
+      "highlights": [
+        "Designed and deployed production systems with AI integration (RAG pipelines, LangChain agents)",
+        "Built scalable platforms across multiple industries with a focus on architecture-first delivery",
+        "Integrated modern CI/CD pipelines using Docker, GitHub Actions, and AWS"
+      ]
     }
   ],
   "socialLinks": [
