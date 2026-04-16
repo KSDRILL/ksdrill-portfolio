@@ -37,7 +37,7 @@
     },
     {
       "id": "ai-python",
-      "name": "AI / Python",
+      "name": "AI Integration",
       "lucideIcon": "BrainCircuit",
       "items": [
         { "name": "Python" },
