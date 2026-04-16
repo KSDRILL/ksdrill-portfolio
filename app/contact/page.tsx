@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageContainer from "@/components/layout/PageContainer";
 import ContactSection from "@/components/features/ContactSection";
-import ContactForm from "@/components/forms/ContactForm";
 import Card from "@/components/ui/Card";
 import { MessageCircle } from "lucide-react";
 
@@ -41,21 +40,7 @@ export default function ContactPage() {
           Channels
         </div>
 
-        <Card className="border-slate-800/85 p-6 md:p-8">
-          <h2 className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-400/90">
-            Message
-          </h2>
-          <p className="mt-2 text-sm text-slate-400">
-            Validated on submit. When email delivery is configured on the server,
-            you get a copy in the inbox; otherwise the form still validates and
-            acknowledges. For sensitive threads, direct email works best.
-          </p>
-          <div className="mt-6">
-            <ContactForm />
-          </div>
-        </Card>
-
-        <ContactSection variant="page" />
+        <ContactSection />
       </div>
     </PageContainer>
   );
