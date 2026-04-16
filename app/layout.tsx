@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Providers from "@/app/providers";
 import { fontMono, fontSans } from "@/app/fonts";
+import BackToTop from "@/components/ui/BackToTop";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_APP_URL ?? "https://ksdrill-portfolio.vercel.app";
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Header />
             {children}
             <Footer />
+            <BackToTop />
           </div>
         </Providers>
       </body>
